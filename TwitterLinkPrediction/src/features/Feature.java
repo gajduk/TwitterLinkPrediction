@@ -12,5 +12,9 @@ public class Feature {
 		this.user2_id = user2_id;
 		this.value = value;
 	}
+
+	public double getValue() {
+		return value;
+	}
 	
 }

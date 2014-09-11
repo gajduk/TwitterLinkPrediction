@@ -27,5 +27,9 @@ public class UserSnapshot {
 	public DBObject getDBObject() {
 		return new BasicDBObject("id",user_id).append("followers",followers);
 	}
+	
+	public static UserSnapshot parseFromDB(DBObject dbo) {
+		return new UserSnapshot((long)(dbo.get("id")),(List<Long>)dbo.get("followers"));
+	}
 
 }

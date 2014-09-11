@@ -57,6 +57,13 @@ public class TwitterMapSnapshot {
 		return new TwitterMapSnapshot(users, taken_at);
 	}
 	
+	public static TwitterMapSnapshot parseFromDBObject(DBObject dbo) {
+		long t = (long)dbo.get("t");
+		List<DBObject> users_snaps = (List<DBObject>) dbo.get("users");
+		List<UserSnapshot> users = new ArrayList<>(users_snaps.stream().map(UserSnapshot::parseFromDB).collect(Collectors.toList()));
+		return new TwitterMapSnapshot(users,new Date(t));
+	}
+	
 	public DBObject getDBObject() {
 		return new BasicDBObject("t",taken_at.getTime()).append("users",users.stream().map(UserSnapshot::getDBObject).collect(Collectors.toList()));
 	}
