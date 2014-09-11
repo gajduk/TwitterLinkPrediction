@@ -10,6 +10,14 @@ public class UserSnapshot {
 	long user_id;
 	List<Long> followers;
 	
+	public long getUser_id() {
+		return user_id;
+	}
+
+	public List<Long> getFollowers() {
+		return followers;
+	}
+
 	public UserSnapshot(long user_id, List<Long> followers) {
 		super();
 		this.user_id = user_id;

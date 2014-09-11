@@ -20,6 +20,14 @@ import com.mongodb.DBObject;
 public class TwitterMapSnapshot {
 	
 	List<UserSnapshot> users;
+	public List<UserSnapshot> getUsers() {
+		return users;
+	}
+
+	public Date getTaken_at() {
+		return taken_at;
+	}
+
 	Date taken_at;
 	
 	public TwitterMapSnapshot(List<UserSnapshot> users, Date taken_at) {
