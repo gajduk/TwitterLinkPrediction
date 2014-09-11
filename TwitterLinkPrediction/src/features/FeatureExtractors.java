@@ -14,6 +14,7 @@ import core.TwitterMapSnapshot;
 import core.UserSnapshot;
 
 public enum FeatureExtractors implements FeatureExtractor{
+	
 	Retwits {
 		public List<Feature> extractFeatures(TwitterMapSnapshot twitter_map) {
 			return getLocalFeaturesForMap(twitter_map,"Retwits","uid","Oruid");
