@@ -3,10 +3,11 @@ import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
+import com.mongodb.DBCursor;
+import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 
 import core.TwiterUserForMap;
@@ -40,8 +41,23 @@ public enum DatabaseManager {
 	}
 
 	public HashMap<String, Double> getWordItdf() {
-		// TODO Auto-generated method stub
-		return null;
+		HashMap<String, Double> res = new HashMap<>();
+		DBCursor cursor = db.getCollection("ItdfWords").find();
+		while ( cursor.hasNext() ) {
+			DBObject dbo = cursor.next();
+			res.put((String)dbo.get("word"),(double)dbo.get("v"));
+		}
+		return res;
+	}
+	
+	public HashMap<String, Double> getHashtagItdf() {
+		HashMap<String, Double> res = new HashMap<>();
+		DBCursor cursor = db.getCollection("ItdfWords").find();
+		while ( cursor.hasNext() ) {
+			DBObject dbo = cursor.next();
+			res.put((String)dbo.get("hashtag"),(double)dbo.get("v"));
+		}
+		return res;
 	}
 
 }
