@@ -9,4 +9,6 @@ public interface FeatureExtractor {
 	
 	public List<Feature> extractFeatures(TwitterMapSnapshot twitter_map);
 	
+//	blah blah
+	
 }
