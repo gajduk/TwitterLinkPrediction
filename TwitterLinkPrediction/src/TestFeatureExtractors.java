@@ -20,8 +20,14 @@ public class TestFeatureExtractors {
 		long t = 1394582708000L;
 		DBObject dbo = DatabaseManager.INSTANCE.db.getCollection("TwitterMaps").findOne(new BasicDBObject("t",t));
 		TwitterMapSnapshot tms = TwitterMapSnapshot.parseFromDBObject(dbo);
-		List<Feature> features = FeatureExtractors.CSTime.extractFeatures(tms);
-		features.subList(0,10).stream().forEach(f -> System.out.println(f.getValue()));
+		List<Feature> features = FeatureExtractors.CSWords.extractFeatures(tms);
+		System.out.println(features.size());
+		double avg = features.stream().map(Feature::getValue).reduce((a,b) -> a+b).get()/features.size();
+		System.out.println(avg);
+		features.stream().filter(f -> f.getValue() > avg*10 ).forEach(f -> System.out.println(f.getValue()));
+		features = FeatureExtractors.removeOutliers(features);
+		System.out.println("filtered");
+		features.stream().filter(f -> f.getValue() > avg*10 ).forEach(f -> System.out.println(f.getValue()));
 	}
 
 }

@@ -3,12 +3,12 @@ package features;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import utils.DatabaseManager;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCollection;
-import com.mongodb.DBObject;
 
 import core.TwitterMapSnapshot;
 import core.UserSnapshot;
@@ -37,9 +37,9 @@ public enum FeatureExtractors implements FeatureExtractor{
 			return getGlobalFeaturesForMap(twitter_map,"CSHashtags");
 		}
 	},
-	CSTwits{
+	CSWords{
 		public List<Feature> extractFeatures(TwitterMapSnapshot twitter_map) {
-			return getGlobalFeaturesForMap(twitter_map,"CSTwits");
+			return getGlobalFeaturesForMap(twitter_map,"CSWords");
 		}
 	},
 	CSTime{
@@ -68,7 +68,7 @@ public enum FeatureExtractors implements FeatureExtractor{
 			long uid1 = us.getUser_id();
 			for ( Long uid2 : us.getFollowers() ) {
 				long c = coll.count(query.append(u1, uid1).append(u2,uid2));
-				features.add(new Feature(uid1,uid2,c*1.0/(total_count.getOrDefault(uid1, 0L)+1)));
+				features.add(new Feature(uid1,uid2,(c*1.0+1.0)/(total_count.getOrDefault(uid1, 0L)+map.getUsers().size())));
 			}
 		}
 		return features;
@@ -87,6 +87,12 @@ public enum FeatureExtractors implements FeatureExtractor{
 			}
 		}
 		return res;
+	}
+	
+	public static List<Feature> removeOutliers(List<Feature> features) {
+		double avg = features.stream().map(Feature::getValue).reduce((a,b) -> a+b).get()/features.size();
+		double threshold = avg*10;
+		return features.stream().map(f -> new Feature(f.getUser1_id(),f.getUser2_id(),Math.max(f.getValue(),threshold))).collect(Collectors.toList());
 	}
 
 }
