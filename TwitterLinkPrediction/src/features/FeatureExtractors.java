@@ -3,6 +3,7 @@ package features;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 import utils.DatabaseManager;
@@ -45,6 +46,21 @@ public enum FeatureExtractors implements FeatureExtractor{
 	CSTime{
 		public List<Feature> extractFeatures(TwitterMapSnapshot twitter_map) {
 			return getGlobalFeaturesForMap(twitter_map,"CSTime");
+		}
+	},
+	
+	Random {
+
+		@Override
+		public List<Feature> extractFeatures(TwitterMapSnapshot tms) {
+			Random rnd = new Random();
+			List<Feature> features = new ArrayList<Feature>();
+			for ( UserSnapshot user : tms.getUsers() ) {
+				for ( Long u2 : user.getFollowers() ) {
+					features.add(new Feature(user.getUser_id(),u2,rnd.nextGaussian()));
+				}
+			}
+			return features;
 		}
 	};
 	

@@ -5,16 +5,22 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import linkpred_batch.FeatureField;
 import utils.DatabaseManager;
 import utils.Utils;
+import cern.colt.matrix.tdouble.impl.DenseDoubleMatrix1D;
 
-import com.mongodb.BasicDBList;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
+
+import features.Feature;
+import features.FeatureExtractors;
+import features.TwitterFeatureGraph;
 
 
 public class TwitterMapSnapshot {
@@ -66,6 +72,42 @@ public class TwitterMapSnapshot {
 	
 	public DBObject getDBObject() {
 		return new BasicDBObject("t",taken_at.getTime()).append("users",users.stream().map(UserSnapshot::getDBObject).collect(Collectors.toList()));
+	}
+
+	public TwitterFeatureGraph buildTwitterFeatureGraph(List<FeatureExtractors> fes) {
+		HashMap<Long,Integer> idxes = new HashMap<>();
+		HashMap<Integer,HashMap<Integer,ArrayList<Double>>> edge_features =  new HashMap<>();
+		int idx = 0;
+		for ( UserSnapshot us : users )
+			idxes.put(us.user_id, idx++);
+		int n = users.size();
+		int nf= fes.size();
+		ArrayList<FeatureField> list = new ArrayList<>();
+		for ( FeatureExtractors fe : fes ) {
+			List<Feature> features = fe.extractFeatures(this);
+			for ( Feature f : features ) {
+				int idx1 = idxes.get(f.getUser1_id());
+				int idx2 = idxes.get(f.getUser2_id());
+				HashMap<Integer,ArrayList<Double>> m = edge_features.get(idx1);
+				if ( m == null ) m = new HashMap<Integer,ArrayList<Double>>();
+				ArrayList<Double> w = m.get(idx2);
+				if ( w == null ) w = new ArrayList<Double>();
+				w.add(f.getValue());
+				m.put(idx2, w);
+				edge_features.put(idx1,m);
+			}
+		}
+		for ( Integer idx1 : edge_features.keySet() ) {
+			HashMap<Integer,ArrayList<Double>> w = edge_features.get(idx1);
+			for ( Integer idx2 : w.keySet() ) {
+				ArrayList<Double> l = w.get(idx2);
+				double d[] = new double[l.size()];
+				for ( int i = 0 ; i < d.length ; ++i ) 
+					d[i] = l.get(i);				
+				list.add(new FeatureField(idx2, idx1, new DenseDoubleMatrix1D(d)));
+			}
+		}
+		return new TwitterFeatureGraph(n, nf, list);
 	}
 
 }

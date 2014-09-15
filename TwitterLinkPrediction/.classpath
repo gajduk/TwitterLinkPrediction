@@ -3,5 +3,14 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre8"/>
 	<classpathentry kind="lib" path="lib/mongo-java-driver-2.12.2.jar"/>
+	<classpathentry kind="lib" path="lib/arpack-combo.jar"/>
+	<classpathentry kind="lib" path="lib/commons-math3-3.2.jar"/>
+	<classpathentry kind="lib" path="lib/csparsej.jar"/>
+	<classpathentry kind="lib" path="lib/jplasma.jar"/>
+	<classpathentry kind="lib" path="lib/jtransforms.jar"/>
+	<classpathentry kind="lib" path="lib/junit.jar"/>
+	<classpathentry kind="lib" path="lib/netlib-java.jar"/>
+	<classpathentry kind="lib" path="lib/optimization.jar"/>
+	<classpathentry kind="lib" path="lib/parallelcolt-0.9.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

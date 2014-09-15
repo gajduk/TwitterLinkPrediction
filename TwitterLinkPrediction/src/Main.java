@@ -1,13 +1,9 @@
-import java.util.Date;
+import java.io.File;
+import java.io.PrintWriter;
+import java.util.List;
 
 import utils.DatabaseManager;
-import utils.Utils;
-
-import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.DBCursor;
-import com.mongodb.MongoClient;
+import core.TwiterUserForMap;
 
 public class Main {
 	
@@ -20,27 +16,10 @@ public class Main {
 	
 	
 	public static void main(String[] args) throws Exception {
-		
-		DBCollection maps_coll = DatabaseManager.INSTANCE.db.getCollection("TwitterMaps");
-		long start = Utils.df.parse("00:00:00 01.01.2014").getTime();
-		long end = Utils.df.parse("00:00:00 09.08.2014").getTime();
-		long step = 24*60*60*1000L;
-		int count = 0;
-		for ( long up_to = start ; up_to < end ; up_to += step ) {
-			++count;
-			/*
-			if ( count != 51 ) continue;
-			DBCursor cursor = twit_coll.find(new BasicDBObject("t",new BasicDBObject("$lt",up_to).append("$gt",up_to-step))).sort(new BasicDBObject("t",1));
-			while ( cursor.hasNext() ) {
-				Twit t = Twit.parsefromDBObject(cursor.next());
-				System.out.println(t);
-			}
-			*/
-//			System.out.println(up_to);
-			//System.out.println(Utils.df.format(new Date(up_to)));
-			System.out.print(maps_coll.count(new BasicDBObject("t",new BasicDBObject("$lt",up_to).append("$gt",up_to-step)))+",");
+		try ( PrintWriter out = new PrintWriter(new File("ids.txt")) ) {
+			List<TwiterUserForMap> users = DatabaseManager.INSTANCE.getAllUsers();
+			users.stream().forEach(u -> out.println(u.id));
 		}
-		System.out.println();
 	}
 	
 
