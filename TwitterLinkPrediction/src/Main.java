@@ -3,7 +3,7 @@ import java.io.PrintWriter;
 import java.util.List;
 
 import utils.DatabaseManager;
-import core.TwiterUserForMap;
+import core.TwitterUserForMap;
 
 public class Main {
 	
@@ -17,8 +17,7 @@ public class Main {
 	
 	public static void main(String[] args) throws Exception {
 		try ( PrintWriter out = new PrintWriter(new File("ids.txt")) ) {
-			List<TwiterUserForMap> users = DatabaseManager.INSTANCE.getAllUsers();
-			users.stream().forEach(u -> out.println(u.id));
+			List<TwitterUserForMap> users = DatabaseManager.INSTANCE.getAllUsers();
 		}
 	}
 	

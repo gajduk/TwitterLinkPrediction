@@ -1,12 +1,15 @@
 package linkpred_batch;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import cern.colt.function.tdouble.DoubleDoubleFunction;
 import cern.colt.matrix.tdouble.DoubleMatrix1D;
 import cern.colt.matrix.tdouble.impl.DenseDoubleMatrix1D;
 import cern.colt.matrix.tdouble.impl.SparseCCDoubleMatrix2D;
 import cern.jet.math.tdouble.DoubleFunctions;
+import core.Edge;
+import features.Features;
 import features.TwitterFeatureGraph;
 
 /**
@@ -22,11 +25,15 @@ public class sDLGraph {
 	/**The future links set*/
 	public ArrayList<Integer> D;     
 	/**The future no-link set*/
-	public ArrayList<Integer> L; 
+	public ArrayList<Integer> L;
+	
+	
+	
+	// useful
+	
 	/**the adjacency matrix*/
 	public SparseCCDoubleMatrix2D A;                             
 	
-	// useful
 	/**Pagerank*/
 	public DoubleMatrix1D p;                                     
 	/**Pagerank gradient*/
@@ -50,7 +57,6 @@ public class sDLGraph {
 		this.s = s;
 		this.D = D;
 		this.L = L;
-		this.A = new SparseCCDoubleMatrix2D(tfg.getN(), tfg.getN());
 		this.p = new DenseDoubleMatrix1D(this.tfg.getN());
 		this.dp = new DoubleMatrix1D [this.tfg.getF()];
 		for (int i = 0; i < tfg.getF(); i++)
@@ -66,14 +72,22 @@ public class sDLGraph {
 
 
 	public void buildAdjacencyMatrix (DoubleMatrix1D param) {
-		double temp;
-		int r, c;
-		for (int i = 0; i < tfg.getList().size(); i++) {
-			r = tfg.getList().get(i).row;
-			c = tfg.getList().get(i).column;
-			temp = weightingFunction(param.zDotProduct(tfg.getList().get(i).features));
-			A.set(r, c, temp);
-		}		
+		int rowIndexes[] = new int[tfg.getEdges().size()];
+		int columnIndexes[] = new int[tfg.getEdges().size()];
+		double values[] = new double[tfg.getEdges().size()];
+		int fi = 0;
+		for ( Features f : tfg.getFeatures() ) {
+			int i = 0;
+			for ( Edge e : tfg.getEdges() ) {
+				rowIndexes[i] = e.getA();
+				columnIndexes[i] = e.getB();
+				values[i++] = f.getFeature(e.getA(), e.getB()).getValue()*param.get(fi);
+			}
+			++fi;
+		}	
+		for ( int i = 0 ; i < values.length ; ++i )
+			values[i] = weightingFunction(values[i]);
+		A = new SparseCCDoubleMatrix2D(tfg.getN(),tfg.getN(),rowIndexes,columnIndexes,values, false,false,true); 
 	}
 	
 	
@@ -84,40 +98,50 @@ public class sDLGraph {
 	* @return SparseCCDoubleMatrix2D
 	*/
 	public SparseCCDoubleMatrix2D buildTransitionTranspose (double alpha) {
+		int n = tfg.getEdges().size()+tfg.getN()-tfg.getG().get(s).size();
 		
-		SparseCCDoubleMatrix2D Q = new SparseCCDoubleMatrix2D(
-				this.A.rows(), this.A.columns());
+		int rowIndexes[] = new int[n];
+		int columnIndexes[] = new int[n];
+		double values[] = new double[n];
 		
-		// row sums
-		int r, c;
+		
+		// initialize row sums
 		for (int i = 0; i < this.tfg.getN(); rowSums[i++] = 0);
-		for (int i = 0; i < tfg.getList().size(); i++) {
-			r = tfg.getList().get(i).row;
-			c = tfg.getList().get(i).column;
-			rowSums[r] += this.A.get(r, c);
+		//caclulate them
+		for ( Edge e : tfg.getEdges() ) {
+			rowSums[e.getA()] += this.A.get(e.getA(), e.getB());
 		}
 		
 		// (1-alpha) * A[i][j] / sumElements(A[i])) + 1(j == s) * alpha
 		// build the transpose of Q 
 		double value;
-		for (int i = 0; i < tfg.getList().size(); i++) {
-			r = tfg.getList().get(i).row;
-			c = tfg.getList().get(i).column;
-			value = this.A.get(r, c);
-			value *= (1 - alpha);
-			Q.set(c, r, value/rowSums[r]);
+		int i = 0;
+		HashMap<Integer,Edge> remaining_edges = new HashMap<Integer,Edge>();
+		for ( Edge e : tfg.getEdges() ) {
+			if ( e.getA() == s ) {
+				remaining_edges.put(e.getB(),e);
+				continue;
+			}
+			value = (1 - alpha)*this.A.get(e.getA(), e.getB());
+			rowIndexes[i] = e.getA();
+			columnIndexes[i] = e.getB();
+			values[i++] = value/rowSums[e.getA()];
 		}
 		
-		for (int i = 0; i < Q.rows(); i++) {
-			value = Q.get(this.s, i);
-			value += alpha;
-			if ( rowSums[i] == 0 )
-				Q.set(this.s,i,1.0);
-			else
-				Q.set(this.s, i, value);
+		for (int k = 0; k < tfg.getN(); k++) {
+			rowIndexes[i] = s;
+			columnIndexes[i] = k; 
+			if ( rowSums[k] == 0 )
+				values[i++] = 1.0d;
+			else {
+				Edge e = remaining_edges.get(k);
+				if ( e != null )
+						values[i] = (1 - alpha)*this.A.get(e.getA(), e.getB());
+				values[i++] += alpha;
+			}
 		}
 		
-		return Q;				
+		return new SparseCCDoubleMatrix2D(tfg.getN(),tfg.getN(),rowIndexes,columnIndexes,values, false,false,true);				
 	}
 	
 	
@@ -136,22 +160,18 @@ public class sDLGraph {
 		// derivative row sums
 		int r, c;
 		double [] dRowSums = new double [this.tfg.getN()];
-		for (int i = 0; i < tfg.getList().size(); i++) {
-			r = tfg.getList().get(i).row;
-			c = tfg.getList().get(i).column;
-			dRowSums[r] += weightingFunctionDerivative(i, r, c, featureIndex);	
+		for ( Edge e : tfg.getEdges() ) {
+			dRowSums[e.getA()] += weightingFunctionDerivative(featureIndex,e.getA(), e.getB());	
 		}
 		
 		double value;
-		for (int i = 0; i < tfg.getList().size(); i++) {
-			r = tfg.getList().get(i).row;
-			c = tfg.getList().get(i).column;
-			value = (weightingFunctionDerivative(i, r, c, featureIndex) * rowSums[r]) -
-					(this.A.get(r, c) * dRowSums[r]);
+		for ( Edge e : tfg.getEdges() ) {
+			value = (weightingFunctionDerivative(featureIndex,e.getA(), e.getB()) * rowSums[e.getA()]) -
+					(this.A.get(e.getA(), e.getB()) * dRowSums[e.getA()]);
 			value *= (1 - alpha);
-			value /= Math.pow(rowSums[r], 2);
+			value /= Math.pow(rowSums[e.getA()], 2);
 			//dQ.set(r, c, value); 
-			dQt.set(c, r, value);
+			dQt.set(e.getA(), e.getB(), value);
 		}
 				
 		return dQt;
@@ -179,8 +199,8 @@ public class sDLGraph {
 	 * @param featureIndex: the index of the parameter with respect to which the derivative is being calculated 
 	 * @return double
 	 */
-	public double weightingFunctionDerivative(int nodeIndex, int row, int column, int featureIndex) {
-		return this.A.get(row, column) * tfg.getList().get(nodeIndex).features.get(featureIndex);
+	public double weightingFunctionDerivative(int featureIndex, int row, int column) {
+		return this.A.get(row, column) * tfg.getFeatureValue(featureIndex, row, column);
 	}
 	
 	/**

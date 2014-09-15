@@ -15,7 +15,7 @@ import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 
 import core.Twit;
-import core.TwiterUserForMap;
+import core.TwitterUserForMap;
 
 @SuppressWarnings("unchecked")
 public class CalculateTwitSimilarity {
@@ -27,11 +27,11 @@ public class CalculateTwitSimilarity {
 	}
 	
 	public static void calculateWordsItdf() {
-		List<TwiterUserForMap> users = DatabaseManager.INSTANCE.getAllUsers();
+		List<TwitterUserForMap> users = DatabaseManager.INSTANCE.getAllUsers();
 		DBCollection words_per_user = DatabaseManager.INSTANCE.db.getCollection("WordsPerUser");
 		HashMap<String,Double> count = new HashMap<>();
-		for ( TwiterUserForMap user : users ) {
-			HashMap<String,Double> count_user = (HashMap<String,Double>) words_per_user.findOne(new BasicDBObject("uid",user.id)).get("words");
+		for ( TwitterUserForMap user : users ) {
+			HashMap<String,Double> count_user = (HashMap<String,Double>) words_per_user.findOne(new BasicDBObject("uid",user.getId())).get("words");
 			count_user.keySet().forEach(key -> count.put(key,count.getOrDefault(key, 0.0)+count_user.get(key)));
 		}
 		DBCollection itdf_words = DatabaseManager.INSTANCE.db.getCollection("ItdfWords");
@@ -39,13 +39,13 @@ public class CalculateTwitSimilarity {
 	}
 	
 	public static void countWordsPerUsers() {
-		List<TwiterUserForMap> users = DatabaseManager.INSTANCE.getAllUsers();
+		List<TwitterUserForMap> users = DatabaseManager.INSTANCE.getAllUsers();
 		DBCollection twit_coll = DatabaseManager.INSTANCE.db.getCollection("Twits");
 		DBCollection words_per_user = DatabaseManager.INSTANCE.db.getCollection("WordsPerUser");
 		
-		for ( TwiterUserForMap user : users ) {
+		for ( TwitterUserForMap user : users ) {
 			HashMap<String,Double> count = new HashMap<>();
-			DBCursor cursor = twit_coll.find(new BasicDBObject("uid",user.id));
+			DBCursor cursor = twit_coll.find(new BasicDBObject("uid",user.getId()));
 			while ( cursor.hasNext() ) {
 				DBObject dbo = cursor.next();
 				Twit twit = Twit.parsefromDBObject(dbo);
@@ -54,37 +54,37 @@ public class CalculateTwitSimilarity {
 					collect(Collectors.toList()).
 					forEach(word -> count.put(word, 1.0+count.getOrDefault(word, 0.0)));
 			}
-			words_per_user.insert(new BasicDBObject("uid",user.id).append("words",count));
+			words_per_user.insert(new BasicDBObject("uid",user.getId()).append("words",count));
 		}
 	}
 	
 	
 	public static void calculateWordsCosineSimilarity() {
 		HashMap<String,Double> itdf = DatabaseManager.INSTANCE.getWordItdf();
-		List<TwiterUserForMap> users = DatabaseManager.INSTANCE.getAllUsers();
+		List<TwitterUserForMap> users = DatabaseManager.INSTANCE.getAllUsers();
 		DBCollection wpu = DatabaseManager.INSTANCE.db.getCollection("WordsPerUser");
 		DBCollection cs = DatabaseManager.INSTANCE.db.getCollection("CSWords");
 		List<DBObject> to_insert = new ArrayList<>();
 		HashMap<Long,HashMap<String,Double>> user_itdf = new HashMap<>();
-		for ( TwiterUserForMap user1 : users ) {
-			HashMap<String,Double> u1words = new HashMap<>((Map<String,Double>) wpu.findOne(new BasicDBObject("uid",user1.id)).get("words"));
+		for ( TwitterUserForMap user1 : users ) {
+			HashMap<String,Double> u1words = new HashMap<>((Map<String,Double>) wpu.findOne(new BasicDBObject("uid",user1.getId())).get("words"));
 			for ( String word : new ArrayList<>(u1words.keySet()) ) {
 				if ( itdf.containsKey(word))
 					u1words.put(word, u1words.get(word)*itdf.get(word));
 				else
 					u1words.remove(word);
 			}
-			user_itdf.put(user1.id,u1words);
+			user_itdf.put(user1.getId(),u1words);
 		}
-		for ( TwiterUserForMap user1 : users ) {
-			for ( TwiterUserForMap user2 : users ) {
-				if (user1.id == user2.id ) continue;
+		for ( TwitterUserForMap user1 : users ) {
+			for ( TwitterUserForMap user2 : users ) {
+				if (user1.getId() == user2.getId() ) continue;
 				
-				HashMap<String,Double> u1words = user_itdf.get(user1.id);
-				HashMap<String,Double> u2words = user_itdf.get(user2.id);
+				HashMap<String,Double> u1words = user_itdf.get(user1.getId());
+				HashMap<String,Double> u2words = user_itdf.get(user2.getId());
 				
 				if ( u2words.size() == 0 || u1words.size() == 0 ) {
-					to_insert.add(new BasicDBObject("u1",user1.id).append("u2",user2.id).append("psi",0));
+					to_insert.add(new BasicDBObject("u1",user1.getId()).append("u2",user2.getId()).append("psi",0));
 					continue;
 				}
 				
@@ -93,7 +93,7 @@ public class CalculateTwitSimilarity {
 				HashMap<String,Double> uwords = u1words;
 				if ( u1words.size() > u2words.size() ) uwords = u2words;
 				double psi = uwords.keySet().parallelStream().map((s) -> u1words.getOrDefault(s,0.0d)*u2words.getOrDefault(s,0.0d)).reduce((a,b) -> a+b).get()/(sum1*sum2+500);
-				to_insert.add(new BasicDBObject("u1",user1.id).append("u2",user2.id).append("psi",psi));
+				to_insert.add(new BasicDBObject("u1",user1.getId()).append("u2",user2.getId()).append("psi",psi));
 			}
 		}
 				

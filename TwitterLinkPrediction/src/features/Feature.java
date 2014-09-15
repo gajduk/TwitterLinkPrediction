@@ -1,31 +1,43 @@
 package features;
 
+import core.TwitterUserForMap;
+
 
 public class Feature {
-
-	long user1_id,user2_id;
+	
+	TwitterUserForMap u1,u2;
 	double value;
 	
-	public Feature(long user1_id, long user2_id, double value) {
+	public Feature(TwitterUserForMap u1,TwitterUserForMap u2, double value) {
 		super();
-		this.user1_id = user1_id;
-		this.user2_id = user2_id;
+		this.u1 = u1;
+		this.u2 = u2;
 		this.value = value;
 	}
 	
+	public int getIdx1() {
+		return u1.getIdx();
+	}
+
+	public int getIdx2() {
+		return u2.getIdx();
+	}
 	
-
-	public long getUser1_id() {
-		return user1_id;
+	public long getUId1() {
+		return u1.getId();
 	}
 
-
-
-	public long getUser2_id() {
-		return user2_id;
+	public long getUId2() {
+		return u2.getId();
 	}
 
+	public TwitterUserForMap getU1() {
+		return u1;
+	}
 
+	public TwitterUserForMap getU2() {
+		return u2;
+	}
 
 	public double getValue() {
 		return value;

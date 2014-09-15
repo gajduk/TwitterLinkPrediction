@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import utils.DatabaseManager;
@@ -11,6 +12,7 @@ import utils.DatabaseManager;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCollection;
 
+import core.TwitterUserForMap;
 import core.TwitterMapSnapshot;
 import core.UserSnapshot;
 
@@ -53,11 +55,12 @@ public enum FeatureExtractors implements FeatureExtractor{
 
 		@Override
 		public List<Feature> extractFeatures(TwitterMapSnapshot tms) {
+			HashMap<Long,TwitterUserForMap> user_ids = new HashMap<>(DatabaseManager.INSTANCE.getAllUsers().stream().collect(Collectors.toMap(TwitterUserForMap::getId,Function.identity())));
 			Random rnd = new Random();
 			List<Feature> features = new ArrayList<Feature>();
 			for ( UserSnapshot user : tms.getUsers() ) {
 				for ( Long u2 : user.getFollowers() ) {
-					features.add(new Feature(user.getUser_id(),u2,rnd.nextGaussian()));
+					features.add(new Feature(user.getUser(),user_ids.get(u2),rnd.nextGaussian()));
 				}
 			}
 			return features;
@@ -71,6 +74,7 @@ public enum FeatureExtractors implements FeatureExtractor{
 	}
 	 
 	public List<Feature> getLocalFeaturesForMap(TwitterMapSnapshot map,String coll_name,String u1,String u2) {
+		HashMap<Long,TwitterUserForMap> user_ids = new HashMap<>(DatabaseManager.INSTANCE.getAllUsers().stream().collect(Collectors.toMap(TwitterUserForMap::getId,Function.identity())));
 		DBCollection coll = DatabaseManager.INSTANCE.db.getCollection(coll_name);
 		BasicDBObject query = getTimeQuery(map);
 		HashMap<Long,Long> total_count = new HashMap<>();
@@ -84,22 +88,21 @@ public enum FeatureExtractors implements FeatureExtractor{
 			long uid1 = us.getUser_id();
 			for ( Long uid2 : us.getFollowers() ) {
 				long c = coll.count(query.append(u1, uid1).append(u2,uid2));
-				features.add(new Feature(uid1,uid2,(c*1.0+1.0)/(total_count.getOrDefault(uid1, 0L)+map.getUsers().size())));
+				features.add(new Feature(user_ids.get(uid1),user_ids.get(uid2),(c*1.0+1.0)/(total_count.getOrDefault(uid1, 0L)+map.getUsers().size())));
 			}
 		}
 		return features;
 	}
-	
-	
 
 	public List<Feature> getGlobalFeaturesForMap(TwitterMapSnapshot map,String coll_name) {
+		HashMap<Long,TwitterUserForMap> user_ids = new HashMap<>(DatabaseManager.INSTANCE.getAllUsers().stream().collect(Collectors.toMap(TwitterUserForMap::getId,Function.identity())));
 		List<Feature> res = new ArrayList<>();
 		DBCollection coll = DatabaseManager.INSTANCE.db.getCollection(coll_name);
 		for ( UserSnapshot us : map.getUsers() ) {
 			long uid1 = us.getUser_id();
 			for ( Long uid2 : us.getFollowers() ) {
 				double psi = Double.parseDouble(""+coll.findOne(new BasicDBObject("u1",uid1).append("u2",uid2)).get("psi"));
-				res.add(new Feature(uid1, uid2, psi));
+				res.add(new Feature(user_ids.get(uid1), user_ids.get(uid2), psi));
 			}
 		}
 		return res;
@@ -108,7 +111,7 @@ public enum FeatureExtractors implements FeatureExtractor{
 	public static List<Feature> removeOutliers(List<Feature> features) {
 		double avg = features.stream().map(Feature::getValue).reduce((a,b) -> a+b).get()/features.size();
 		double threshold = avg*10;
-		return features.stream().map(f -> new Feature(f.getUser1_id(),f.getUser2_id(),Math.max(f.getValue(),threshold))).collect(Collectors.toList());
+		return features.stream().map(f -> new Feature(f.getU1(),f.getU2(),Math.max(f.getValue(),threshold))).collect(Collectors.toList());
 	}
 
 }

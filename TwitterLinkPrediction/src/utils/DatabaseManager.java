@@ -10,7 +10,7 @@ import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 
-import core.TwiterUserForMap;
+import core.TwitterUserForMap;
 
 public enum DatabaseManager {
 	INSTANCE;
@@ -28,16 +28,16 @@ public enum DatabaseManager {
 		}
 	}
 	
-	public List<TwiterUserForMap> getAllUsers() {
-		return db.getCollection(users_col).find().toArray().stream().map(TwiterUserForMap::parseFromDB).collect(Collectors.toList());
+	public List<TwitterUserForMap> getAllUsers() {
+		return db.getCollection(users_col).find().toArray().stream().map(TwitterUserForMap::parseFromDB).collect(Collectors.toList());
 	}
 	
-	public TwiterUserForMap getUser(long user_id) {
-		return TwiterUserForMap.parseFromDB(db.getCollection(users_col).findOne(new BasicDBObject("id",user_id)));
+	public TwitterUserForMap getUser(long user_id) {
+		return TwitterUserForMap.parseFromDB(db.getCollection(users_col).findOne(new BasicDBObject("id",user_id)));
 	}
 	
-	public TwiterUserForMap getUserByIdx(int idx) {
-		return TwiterUserForMap.parseFromDB(db.getCollection(users_col).findOne(new BasicDBObject("idx",idx)));
+	public TwitterUserForMap getUserByIdx(int idx) {
+		return TwitterUserForMap.parseFromDB(db.getCollection(users_col).findOne(new BasicDBObject("idx",idx)));
 	}
 
 	public HashMap<String, Double> getWordItdf() {
