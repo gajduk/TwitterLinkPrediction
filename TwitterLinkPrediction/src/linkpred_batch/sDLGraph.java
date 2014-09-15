@@ -19,7 +19,7 @@ import features.TwitterFeatureGraph;
  */
 public class sDLGraph {
 	
-	TwitterFeatureGraph tfg;                             
+	public TwitterFeatureGraph tfg;                             
 	/**The starting node*/
 	public int s;                                             
 	/**The future links set*/

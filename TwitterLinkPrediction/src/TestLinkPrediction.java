@@ -27,13 +27,13 @@ public class TestLinkPrediction {
 		fes.add(FeatureExtractors.Random);
 		fes.add(FeatureExtractors.Random);
 		fes.add(FeatureExtractors.Random);
-		TwitterMapSnapshot tms = TwitterMapSnapshot.readFromFolder("time__01_05_00__date_13_03_2014");
-		TwitterFeatureGraph twg = tms.buildTwitterFeatureGraph(fes);
+		TwitterMapSnapshot tms = TwitterMapSnapshot.readFromFolder("time__05_00_02__date_15_03_2014");
+		System.out.println("Map parsed");
+//		TwitterFeatureGraph twg = tms.buildTwitterFeatureGraph(fes);
+//		sDLGraph[] train_rwgs = twg.generateNetworks(10);
 		
-		sDLGraph[] train_rwgs = twg.generateNetworks(10);
 		
-		
-		int f = twg.getF();
+		int f = fes.size();
 		double alpha = 0.3;                                          // damping factor
 		double b = 1e-6;                                             // WMW function parameter
 		double lambda = 1;                                           // regularization parameter 
@@ -77,10 +77,11 @@ public class TestLinkPrediction {
 		double [] trueParameters = optimum.getFirst();
 		
 		*/
-		for ( double p = .1d ; p < .101d ; p += 0.0899d ) {
-			twg = tms.buildTwitterFeatureGraph(fes);
-			sDLGraph[] test_rwgs = twg.generateNetworks(5);
-			twg.removeLinks(p);
+		for ( double p = .0d ; p < .401d ; p += 0.0899d ) {
+			TwitterFeatureGraph twg = tms.buildTwitterFeatureGraph(fes).removeLinks(p);
+			System.out.println("graph build");
+			sDLGraph[] test_rwgs = twg.generateNetworks(10);
+			System.out.println("sdls  generated");
 			double []trueParameters = new double[f];
 			for ( int i = 0 ; i < f ; ++i )
 				trueParameters[i] = 0.000001d;
@@ -90,18 +91,14 @@ public class TestLinkPrediction {
 				ArrayList<Integer> predicted_links = Ranker.predictLinks(
 						rwg, new DenseDoubleMatrix1D(trueParameters), alpha, rwg.D.size()+1);
 				ArrayList<Integer> true_links = rwg.D;
-				System.out.println("Predicted:"+predicted_links.stream().sorted().collect(Collectors.toList()));
-				System.out.println("True:"+true_links.stream().sorted().collect(Collectors.toList()));
 				HashSet<Integer> correct = new HashSet<Integer>(true_links);
 				correct.retainAll(predicted_links);
-				Set<Integer> D = new HashSet<Integer>();
-				for ( FeatureField ff : twg.getList() ) 
-					if ( ff.getRow() == rwg.s )
-						D.add(ff.getColumn());
-				System.out.println("Current D:"+D.stream().sorted().collect(Collectors.toList()));
-				System.out.println("Correct:"+correct.stream().sorted().collect(Collectors.toList()));
 				prec += (correct.size()*1.0d)/(rwg.D.size());
-				System.out.println();
+//				System.out.println("Predicted:"+predicted_links.stream().sorted().collect(Collectors.toList()));
+//				System.out.println("True:"+true_links.stream().sorted().collect(Collectors.toList()));
+//				System.out.println("Current D:"+rwg.tfg.getG().getOrDefault(rwg.s, new HashSet<>()).stream().sorted().collect(Collectors.toList()));
+//				System.out.println("Correct:"+correct.stream().sorted().collect(Collectors.toList()));
+//				System.out.println();
 			}
 			System.out.printf("Links removed: %.2f, Precision: %.3f \n",p,prec/test_rwgs.length);
 			

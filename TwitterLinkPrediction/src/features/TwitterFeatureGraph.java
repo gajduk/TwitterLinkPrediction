@@ -19,18 +19,25 @@ public class TwitterFeatureGraph {
 	ArrayList<Edge> edges;
 	ArrayList<Features> features;
 	
-	public TwitterFeatureGraph(int n, int f,HashMap<Integer,HashSet<Integer>> g, ArrayList<Features> features) {
+	public TwitterFeatureGraph(int n, int f,ArrayList<Edge> edges, ArrayList<Features> features) {
 		super();
 		this.n = n;
 		this.f = f;
-		this.g = g;
 		this.features = features;
-		this.edges = new ArrayList<>();
-		for ( Integer a : g.keySet() ) {
-			edges.addAll(g.get(a).stream().map((b) -> { return new Edge(a,b); }).collect(Collectors.toList()));
-		}
+		this.edges = edges;
+		populateG(edges);
 	}
 	
+	private void populateG(ArrayList<Edge> edges2) {
+		g = new HashMap<Integer,HashSet<Integer>>();
+		edges.stream().forEach(e -> {
+			HashSet<Integer> h = g.get(e.getA());
+			if ( h == null ) h = new HashSet<>();
+			h.add(e.getB());
+			g.put(e.getA(),h);
+		});
+	}
+
 	public ArrayList<Features> getFeatures() {
 		return features;
 	}
@@ -57,7 +64,7 @@ public class TwitterFeatureGraph {
 		int i = 0;
 		for ( Integer s : ss ) {
 			Set<Integer> D = g.get(s);
-			if ( D.size() < 2 ) continue;
+			if ( D == null || D.size() < 2 ) continue;
 			Set<Integer> L = new HashSet<>(all);
 			L.removeAll(D);
 			res[i++] = new sDLGraph(this, s, new ArrayList<>(D), new ArrayList<>(L));
@@ -72,6 +79,11 @@ public class TwitterFeatureGraph {
 
 	public ArrayList<Edge> getEdges() {
 		return edges;
+	}
+
+	public TwitterFeatureGraph removeLinks(double p) {
+		ArrayList<Edge> edges = new ArrayList<Edge>(this.edges.stream().filter(e -> Math.random() > p).collect(Collectors.toList()));
+		return new TwitterFeatureGraph(n,f,edges,features);
 	}
 
 	

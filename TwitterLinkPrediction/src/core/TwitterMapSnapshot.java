@@ -81,10 +81,16 @@ public class TwitterMapSnapshot {
 	public TwitterFeatureGraph buildTwitterFeatureGraph(List<FeatureExtractors> fes) {
 		HashMap<Long,TwitterUserForMap> user_ids = new HashMap<>(DatabaseManager.INSTANCE.getAllUsers().stream().collect(Collectors.toMap(TwitterUserForMap::getId,Function.identity())));
 		ArrayList<Features> list = new ArrayList<>(fes.stream().map(fe -> new Features(fe,fe.extractFeatures(this))).collect(Collectors.toList()));
+		/*
 		HashMap<Integer,HashSet<Integer>> g = new HashMap<Integer,HashSet<Integer>>();
 		for ( UserSnapshot us : getUsers() ) 
 			g.put(us.getUserIdx(),new HashSet<Integer>(us.getFollowers().stream().map(id -> user_ids.get(id).getIdx()).collect(Collectors.toList())));
-		return new TwitterFeatureGraph(users.size(), fes.size(),g, list);
+		*/
+		ArrayList<Edge> edges = new ArrayList<Edge>();
+		for ( UserSnapshot us : getUsers() ) 
+			edges.addAll(us.getFollowers().stream().map(id -> new Edge(us.user.idx,user_ids.get(id).idx)).collect(Collectors.toList()));
+		
+		return new TwitterFeatureGraph(users.size(), fes.size(),edges, list);
 	}
 	
 }

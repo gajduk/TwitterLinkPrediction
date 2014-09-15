@@ -1,0 +1,1465 @@
+EXTRACTING STARTED at:05:00:02
+Current time:05:00:06 users_left:999 current_user:1198830542
+Current time:05:00:06 users_left:998 current_user:123529450
+Current time:05:00:06 users_left:997 current_user:257396433
+Current time:05:00:06 users_left:996 current_user:1215057884
+Current time:05:00:06 users_left:995 current_user:1379605124
+Current time:05:00:06 users_left:994 current_user:1652784522
+Current time:05:00:06 users_left:993 current_user:972693067
+Current time:05:00:06 users_left:992 current_user:195700244
+Current time:05:00:06 users_left:991 current_user:100566940
+Current time:05:00:06 users_left:990 current_user:586886825
+Current time:05:00:06 users_left:989 current_user:1715806196
+Current time:05:00:06 users_left:988 current_user:173792315
+Current time:05:00:07 users_left:987 current_user:47168361
+Current time:05:00:07 users_left:986 current_user:82845845
+Current time:05:00:07 users_left:985 current_user:360815223
+Current time:05:00:07 users_left:984 current_user:1860657841
+Current time:05:00:07 users_left:983 current_user:836072653
+Current time:05:00:07 users_left:982 current_user:130537538
+Current time:05:00:07 users_left:981 current_user:1675214208
+Current time:05:00:07 users_left:980 current_user:857692574
+Current time:05:00:07 users_left:979 current_user:421956171
+Current time:05:00:07 users_left:978 current_user:451517733
+Current time:05:00:07 users_left:977 current_user:1004828521
+Current time:05:00:07 users_left:976 current_user:77046192
+Current time:05:00:07 users_left:975 current_user:2235330103
+Current time:05:00:08 users_left:974 current_user:1089205285
+Current time:05:00:08 users_left:973 current_user:745250557
+Current time:05:00:08 users_left:972 current_user:548820091
+Current time:05:00:08 users_left:971 current_user:441531413
+Current time:05:00:08 users_left:970 current_user:2217159998
+Current time:05:00:08 users_left:969 current_user:315031147
+Current time:05:00:08 users_left:968 current_user:2187549079
+Current time:05:00:08 users_left:967 current_user:1163484660
+Current time:05:00:08 users_left:966 current_user:879899010
+Current time:05:00:08 users_left:965 current_user:2230448132
+Current time:05:00:08 users_left:964 current_user:298731943
+Current time:05:00:08 users_left:963 current_user:720100866
+Current time:05:00:08 users_left:962 current_user:505761529
+Current time:05:00:08 users_left:961 current_user:949316714
+Current time:05:00:08 users_left:960 current_user:1243292809
+Current time:05:00:08 users_left:959 current_user:459627803
+Current time:05:00:08 users_left:958 current_user:2196106466
+Current time:05:00:08 users_left:957 current_user:1113970418
+Current time:05:00:08 users_left:956 current_user:17017764
+Current time:05:00:08 users_left:955 current_user:1527607669
+Current time:05:00:08 users_left:954 current_user:1262881236
+Current time:05:00:08 users_left:953 current_user:409646420
+Current time:05:00:09 users_left:952 current_user:416903803
+Current time:05:00:09 users_left:951 current_user:2163811375
+Current time:05:00:09 users_left:950 current_user:506680086
+Current time:05:00:09 users_left:949 current_user:64871210
+Current time:05:00:09 users_left:948 current_user:1236840026
+Current time:05:00:09 users_left:947 current_user:16390221
+Current time:05:00:09 users_left:946 current_user:1629238814
+Current time:05:00:09 users_left:945 current_user:390730338
+Current time:05:00:09 users_left:944 current_user:262303740
+Current time:05:00:09 users_left:943 current_user:326224634
+Current time:05:00:09 users_left:942 current_user:396933067
+Current time:05:00:09 users_left:941 current_user:187503621
+Current time:05:00:09 users_left:940 current_user:47337882
+Current time:05:00:09 users_left:939 current_user:269871757
+Current time:05:00:10 users_left:938 current_user:1166526613
+Current time:05:00:10 users_left:937 current_user:148353068
+Current time:05:00:10 users_left:936 current_user:109810061
+Current time:05:00:10 users_left:935 current_user:343164432
+Current time:05:00:10 users_left:934 current_user:2157771607
+Current time:05:00:10 users_left:933 current_user:131875725
+Current time:05:00:10 users_left:932 current_user:1292027161
+Current time:05:00:10 users_left:931 current_user:2223295518
+Current time:05:00:10 users_left:930 current_user:99610788
+Current time:05:00:10 users_left:929 current_user:844453400
+Current time:05:00:10 users_left:928 current_user:178295617
+Current time:05:00:10 users_left:927 current_user:1873069267
+Current time:05:00:10 users_left:926 current_user:122761723
+Current time:05:00:10 users_left:925 current_user:20623338
+Current time:05:00:10 users_left:924 current_user:81659201
+Current time:05:00:10 users_left:923 current_user:355563146
+Current time:05:00:10 users_left:922 current_user:247179031
+Current time:05:00:10 users_left:921 current_user:1703848716
+Current time:05:00:10 users_left:920 current_user:1720222308
+Current time:05:00:10 users_left:919 current_user:1369789717
+SECONDS TO SLEEP: 905s
+Time when to request again: 05:15:15
+Current time:05:00:10 users_left:918 current_user:238485999
+Current time:05:00:11 users_left:917 current_user:160566744
+Current time:05:00:11 users_left:916 current_user:2194867652
+Current time:05:00:11 users_left:915 current_user:1528678034
+Current time:05:00:11 users_left:914 current_user:295132703
+Current time:05:00:11 users_left:913 current_user:1163093916
+Current time:05:00:11 users_left:912 current_user:1193812884
+Current time:05:00:11 users_left:911 current_user:176722314
+Current time:05:00:11 users_left:910 current_user:83469901
+Current time:05:00:11 users_left:909 current_user:61134188
+Current time:05:00:11 users_left:908 current_user:1442427084
+Current time:05:00:11 users_left:907 current_user:43858622
+Current time:05:00:11 users_left:906 current_user:1569998732
+Current time:05:00:11 users_left:905 current_user:462076757
+Current time:05:00:11 users_left:904 current_user:581751151
+Current time:05:00:11 users_left:903 current_user:778856994
+Current time:05:00:12 users_left:902 current_user:1226204203
+Current time:05:00:12 users_left:901 current_user:60205259
+Current time:05:00:12 users_left:900 current_user:53945855
+Current time:05:00:12 users_left:899 current_user:1148447365
+Current time:05:00:12 users_left:898 current_user:1135364252
+Current time:05:00:12 users_left:897 current_user:524732318
+Current time:05:00:12 users_left:896 current_user:204959457
+Current time:05:00:12 users_left:895 current_user:92397056
+Current time:05:00:12 users_left:894 current_user:1678078332
+Current time:05:00:12 users_left:893 current_user:188767679
+Current time:05:00:12 users_left:892 current_user:937792304
+Current time:05:00:12 users_left:891 current_user:626418125
+Current time:05:00:12 users_left:890 current_user:57744998
+Current time:05:00:12 users_left:889 current_user:79299030
+Current time:05:00:12 users_left:888 current_user:1924461800
+Current time:05:00:12 users_left:887 current_user:514704899
+Current time:05:00:12 users_left:886 current_user:1968972272
+Current time:05:00:12 users_left:885 current_user:594740357
+Current time:05:00:13 users_left:884 current_user:337690819
+Current time:05:00:13 users_left:883 current_user:776256379
+Current time:05:00:13 users_left:882 current_user:153518470
+Current time:05:00:13 users_left:881 current_user:906283201
+Current time:05:00:13 users_left:880 current_user:1245878658
+Current time:05:00:13 users_left:879 current_user:342232811
+Current time:05:00:13 users_left:878 current_user:1920452749
+Current time:05:00:13 users_left:877 current_user:172916154
+Current time:05:00:13 users_left:876 current_user:1731963282
+Current time:05:00:13 users_left:875 current_user:460405896
+Current time:05:00:13 users_left:874 current_user:496642623
+Current time:05:00:13 users_left:873 current_user:227669298
+Current time:05:00:13 users_left:872 current_user:1561150069
+Current time:05:00:13 users_left:871 current_user:1609910233
+Current time:05:00:13 users_left:870 current_user:1186898906
+Current time:05:00:14 users_left:869 current_user:1928253085
+Current time:05:00:14 users_left:868 current_user:474285638
+Current time:05:00:14 users_left:867 current_user:203935141
+Current time:05:00:14 users_left:866 current_user:800775822
+Current time:05:00:14 users_left:865 current_user:1606241192
+Current time:05:00:14 users_left:864 current_user:15196584
+Current time:05:00:14 users_left:863 current_user:65870681
+Current time:05:00:14 users_left:862 current_user:1594425276
+Current time:05:00:14 users_left:861 current_user:1093152414
+Current time:05:00:14 users_left:860 current_user:120750890
+Current time:05:00:14 users_left:859 current_user:153894004
+Current time:05:00:14 users_left:858 current_user:303265509
+Current time:05:00:14 users_left:857 current_user:1541351184
+Current time:05:00:14 users_left:856 current_user:43229189
+Current time:05:00:14 users_left:855 current_user:2230244268
+Current time:05:00:14 users_left:854 current_user:817202046
+Current time:05:00:14 users_left:853 current_user:1675294093
+Current time:05:00:15 users_left:852 current_user:422454303
+Current time:05:00:15 users_left:851 current_user:69232035
+Current time:05:00:15 users_left:850 current_user:523226896
+Current time:05:00:15 users_left:849 current_user:562880142
+Current time:05:00:15 users_left:848 current_user:128726418
+Current time:05:00:15 users_left:847 current_user:270477982
+Current time:05:00:15 users_left:846 current_user:328718349
+Current time:05:00:15 users_left:845 current_user:2155310614
+Current time:05:00:15 users_left:844 current_user:258316975
+Current time:05:00:15 users_left:843 current_user:1680453786
+Current time:05:00:15 users_left:842 current_user:179281703
+Current time:05:00:15 users_left:841 current_user:2198435349
+Current time:05:00:16 users_left:840 current_user:1374789799
+Current time:05:00:16 users_left:839 current_user:2207840321
+Current time:05:00:16 users_left:838 current_user:1685523252
+Current time:05:00:16 users_left:837 current_user:222825943
+Current time:05:00:16 users_left:836 current_user:17483098
+Current time:05:00:16 users_left:835 current_user:1889760728
+Current time:05:00:16 users_left:834 current_user:151662312
+Current time:05:00:16 users_left:833 current_user:60285972
+Current time:05:00:16 users_left:832 current_user:728892858
+Current time:05:00:16 users_left:831 current_user:1101458132
+Current time:05:00:16 users_left:830 current_user:947352006
+Current time:05:00:16 users_left:829 current_user:601936332
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:15:10
+Going to sleep for 895 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:15:11
+Going to sleep for 895 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:15:11
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:15:11
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:15:11
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:15:11
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:15:11
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:15:11
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:15:11
+Current time:05:00:17 users_left:828 current_user:43935220
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:15:11
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:15:11
+Current time:05:15:11 users_left:826 current_user:465625023
+Current time:05:15:11 users_left:826 current_user:1571739451
+Current time:05:15:11 users_left:825 current_user:1362195350
+Current time:05:15:11 users_left:824 current_user:1466799703
+Current time:05:15:11 users_left:823 current_user:1708846069
+Current time:05:15:11 users_left:822 current_user:2192588948
+Current time:05:15:11 users_left:821 current_user:1735454642
+Current time:05:15:11 users_left:820 current_user:1082389844
+Current time:05:15:12 users_left:819 current_user:1632385392
+Current time:05:15:12 users_left:818 current_user:341315257
+Current time:05:15:12 users_left:817 current_user:110697094
+Current time:05:15:12 users_left:816 current_user:77725468
+Current time:05:15:12 users_left:815 current_user:1206456948
+Current time:05:15:12 users_left:814 current_user:621487867
+Current time:05:15:12 users_left:813 current_user:2218328717
+Current time:05:15:12 users_left:812 current_user:1692664555
+Current time:05:15:12 users_left:811 current_user:349114633
+Current time:05:15:12 users_left:810 current_user:123245932
+Current time:05:15:12 users_left:809 current_user:120419798
+Current time:05:15:12 users_left:808 current_user:320767833
+Current time:05:15:13 users_left:807 current_user:2214781752
+Current time:05:15:13 users_left:806 current_user:91963992
+Current time:05:15:13 users_left:805 current_user:479069194
+Current time:05:15:13 users_left:804 current_user:703647109
+Current time:05:15:13 users_left:803 current_user:2164088383
+Current time:05:15:13 users_left:802 current_user:2161379696
+Current time:05:15:13 users_left:801 current_user:2222132827
+Current time:05:15:13 users_left:800 current_user:624159065
+Current time:05:15:13 users_left:799 current_user:589486151
+Current time:05:15:13 users_left:798 current_user:2161532270
+Current time:05:15:13 users_left:797 current_user:1050428714
+Current time:05:15:13 users_left:796 current_user:103276249
+Current time:05:15:13 users_left:795 current_user:884445908
+Current time:05:15:13 users_left:794 current_user:2192151939
+Current time:05:15:13 users_left:793 current_user:1349019054
+Current time:05:15:13 users_left:792 current_user:507746030
+Current time:05:15:13 users_left:791 current_user:1583115480
+Current time:05:15:13 users_left:790 current_user:2232187902
+Current time:05:15:13 users_left:789 current_user:53482242
+Current time:05:15:14 users_left:788 current_user:2246008254
+Current time:05:15:14 users_left:787 current_user:1056348026
+Current time:05:15:14 users_left:786 current_user:165798981
+Current time:05:15:14 users_left:785 current_user:279931448
+Current time:05:15:14 users_left:784 current_user:180363556
+Current time:05:15:14 users_left:783 current_user:93464280
+Current time:05:15:14 users_left:782 current_user:140036644
+Current time:05:15:14 users_left:781 current_user:2194863589
+Current time:05:15:14 users_left:780 current_user:467372384
+Current time:05:15:14 users_left:779 current_user:809177366
+Current time:05:15:14 users_left:778 current_user:1971418412
+Current time:05:15:14 users_left:777 current_user:1108795442
+Current time:05:15:14 users_left:776 current_user:1519090010
+Current time:05:15:14 users_left:775 current_user:481861183
+Current time:05:15:15 users_left:774 current_user:570681512
+Current time:05:15:15 users_left:773 current_user:245851387
+Current time:05:15:15 users_left:772 current_user:181190520
+Current time:05:15:15 users_left:771 current_user:447088033
+Current time:05:15:15 users_left:770 current_user:1173235802
+Current time:05:15:15 users_left:769 current_user:521651090
+Current time:05:15:15 users_left:768 current_user:1606174166
+Current time:05:15:15 users_left:767 current_user:20931378
+Current time:05:15:15 users_left:766 current_user:625726290
+Current time:05:15:15 users_left:765 current_user:1408131793
+Current time:05:15:15 users_left:764 current_user:338368717
+Current time:05:15:15 users_left:763 current_user:300171777
+Current time:05:15:15 users_left:762 current_user:994844220
+Current time:05:15:15 users_left:761 current_user:1138477748
+Current time:05:15:15 users_left:760 current_user:1083754532
+Current time:05:15:15 users_left:759 current_user:1473618314
+Current time:05:15:16 users_left:758 current_user:113470370
+Current time:05:15:16 users_left:757 current_user:467808770
+Current time:05:15:16 users_left:756 current_user:58536634
+Current time:05:15:16 users_left:755 current_user:365145576
+Current time:05:15:16 users_left:754 current_user:2173591403
+Current time:05:15:16 users_left:753 current_user:109978840
+Current time:05:15:16 users_left:752 current_user:97893908
+Current time:05:15:16 users_left:751 current_user:881038512
+Current time:05:15:16 users_left:750 current_user:220843195
+Current time:05:15:16 users_left:749 current_user:193047199
+SECONDS TO SLEEP: 909s
+Time when to request again: 05:30:25
+Current time:05:15:16 users_left:748 current_user:72056806
+Current time:05:15:16 users_left:747 current_user:497871167
+Current time:05:15:16 users_left:746 current_user:26866897
+Current time:05:15:16 users_left:745 current_user:175476018
+Current time:05:15:16 users_left:744 current_user:1572075511
+Current time:05:15:16 users_left:743 current_user:1510246874
+Current time:05:15:16 users_left:742 current_user:2220454628
+Current time:05:15:17 users_left:741 current_user:1092520652
+Current time:05:15:17 users_left:740 current_user:612077876
+Current time:05:15:17 users_left:739 current_user:138875597
+Current time:05:15:17 users_left:738 current_user:192475053
+Current time:05:15:17 users_left:737 current_user:316997932
+Current time:05:15:17 users_left:736 current_user:499970430
+Current time:05:15:17 users_left:735 current_user:1034503693
+Current time:05:15:17 users_left:734 current_user:1901794969
+Current time:05:15:17 users_left:733 current_user:862852304
+Current time:05:15:17 users_left:732 current_user:237186213
+Current time:05:15:17 users_left:731 current_user:194594177
+Current time:05:15:17 users_left:730 current_user:181952519
+Current time:05:15:17 users_left:729 current_user:66695500
+Current time:05:15:17 users_left:728 current_user:538630782
+Current time:05:15:17 users_left:727 current_user:1854665370
+Current time:05:15:18 users_left:726 current_user:27632331
+Current time:05:15:18 users_left:725 current_user:43549746
+Current time:05:15:18 users_left:724 current_user:55329302
+Current time:05:15:18 users_left:723 current_user:583823020
+Current time:05:15:18 users_left:721 current_user:333396112
+Current time:05:15:18 users_left:721 current_user:185194271
+Current time:05:15:18 users_left:720 current_user:541758285
+Current time:05:15:18 users_left:719 current_user:1708083696
+Current time:05:15:18 users_left:718 current_user:159074117
+Current time:05:15:18 users_left:717 current_user:76630582
+Current time:05:15:18 users_left:716 current_user:1531609986
+Current time:05:15:18 users_left:715 current_user:131537276
+Current time:05:15:18 users_left:714 current_user:925163851
+Current time:05:15:18 users_left:713 current_user:280246401
+Current time:05:15:18 users_left:712 current_user:753936512
+Current time:05:15:18 users_left:711 current_user:432690471
+Current time:05:15:18 users_left:710 current_user:1347862034
+Current time:05:15:19 users_left:709 current_user:635197399
+Current time:05:15:19 users_left:708 current_user:33029563
+Current time:05:15:19 users_left:707 current_user:773348876
+Current time:05:15:19 users_left:706 current_user:95436148
+Current time:05:15:19 users_left:705 current_user:741219409
+Current time:05:15:19 users_left:704 current_user:1611635630
+Current time:05:15:19 users_left:703 current_user:231936329
+Current time:05:15:19 users_left:702 current_user:83270779
+Current time:05:15:19 users_left:701 current_user:479060329
+Current time:05:15:19 users_left:700 current_user:1211838278
+Current time:05:15:19 users_left:699 current_user:1107122221
+Current time:05:15:19 users_left:698 current_user:1667805960
+Current time:05:15:19 users_left:697 current_user:292249901
+Current time:05:15:20 users_left:696 current_user:59191300
+Current time:05:15:20 users_left:695 current_user:472304074
+Current time:05:15:20 users_left:694 current_user:821438388
+Current time:05:15:20 users_left:693 current_user:74750975
+Current time:05:15:20 users_left:692 current_user:1645509972
+Current time:05:15:20 users_left:691 current_user:1313422142
+SECONDS TO SLEEP: 900s
+Time when to request again: 05:30:20
+Current time:05:15:20 users_left:690 current_user:11715322
+Current time:05:15:20 users_left:689 current_user:519394700
+Current time:05:15:20 users_left:688 current_user:1390206073
+Current time:05:15:20 users_left:687 current_user:458315271
+Current time:05:15:20 users_left:686 current_user:432029462
+Current time:05:15:20 users_left:685 current_user:389570890
+Current time:05:15:21 users_left:684 current_user:29570969
+Current time:05:15:21 users_left:683 current_user:322043530
+Current time:05:15:21 users_left:682 current_user:96894775
+Current time:05:15:21 users_left:681 current_user:1938481520
+Current time:05:15:21 users_left:680 current_user:251280812
+Current time:05:15:21 users_left:679 current_user:384459948
+Current time:05:15:21 users_left:678 current_user:1731769214
+Current time:05:15:21 users_left:677 current_user:361431891
+Current time:05:15:21 users_left:676 current_user:1304855779
+Current time:05:15:21 users_left:675 current_user:80384431
+Current time:05:15:21 users_left:674 current_user:1083900458
+Current time:05:15:22 users_left:673 current_user:268241186
+Current time:05:15:22 users_left:672 current_user:14674437
+Current time:05:15:22 users_left:671 current_user:135865225
+Current time:05:15:22 users_left:670 current_user:223137625
+Current time:05:15:22 users_left:669 current_user:344830309
+Current time:05:15:22 users_left:668 current_user:1031343955
+Current time:05:15:22 users_left:667 current_user:56667539
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:30:16
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:30:16
+Current time:05:15:22 users_left:666 current_user:2237833136
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:30:16
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:30:16
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:30:16
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:30:16
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:30:16
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:30:16
+Current time:05:15:22 users_left:665 current_user:1272418009
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:30:16
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:30:16
+Current time:05:30:17 users_left:664 current_user:528511574
+Current time:05:30:17 users_left:663 current_user:115994003
+Current time:05:30:17 users_left:662 current_user:1169858990
+Current time:05:30:17 users_left:661 current_user:1050704023
+Current time:05:30:17 users_left:660 current_user:126968704
+Current time:05:30:17 users_left:659 current_user:848254141
+Current time:05:30:17 users_left:658 current_user:603848451
+Current time:05:30:17 users_left:657 current_user:1073717168
+Current time:05:30:17 users_left:656 current_user:1770670904
+Current time:05:30:17 users_left:655 current_user:545127301
+Current time:05:30:17 users_left:654 current_user:313964515
+Current time:05:30:17 users_left:653 current_user:1691016535
+Current time:05:30:17 users_left:652 current_user:84990221
+Current time:05:30:17 users_left:651 current_user:269333587
+Current time:05:30:17 users_left:650 current_user:95117113
+Current time:05:30:17 users_left:649 current_user:501326401
+Current time:05:30:18 users_left:648 current_user:237553425
+Current time:05:30:18 users_left:647 current_user:116718724
+Current time:05:30:18 users_left:646 current_user:619929776
+Current time:05:30:18 users_left:645 current_user:80350954
+Current time:05:30:18 users_left:644 current_user:903840836
+Current time:05:30:18 users_left:643 current_user:483855980
+Current time:05:30:18 users_left:642 current_user:493462402
+Current time:05:30:18 users_left:641 current_user:910060981
+Current time:05:30:18 users_left:640 current_user:164741666
+Current time:05:30:18 users_left:639 current_user:464613073
+Current time:05:30:18 users_left:638 current_user:774268902
+Current time:05:30:18 users_left:637 current_user:1001414520
+Current time:05:30:18 users_left:636 current_user:391340447
+Current time:05:30:19 users_left:635 current_user:964325959
+Current time:05:30:19 users_left:634 current_user:577310151
+Current time:05:30:19 users_left:633 current_user:340441769
+Current time:05:30:19 users_left:632 current_user:260755991
+Current time:05:30:19 users_left:631 current_user:177290470
+Current time:05:30:19 users_left:630 current_user:763459106
+Current time:05:30:19 users_left:629 current_user:1868631625
+Current time:05:30:19 users_left:628 current_user:1522977306
+Current time:05:30:19 users_left:627 current_user:160557780
+Current time:05:30:19 users_left:626 current_user:294101651
+SECONDS TO SLEEP: 907s
+Time when to request again: 05:45:26
+Current time:05:30:19 users_left:625 current_user:259403590
+Current time:05:30:20 users_left:624 current_user:1405850066
+Current time:05:30:20 users_left:623 current_user:435970564
+Current time:05:30:20 users_left:622 current_user:89677148
+Current time:05:30:20 users_left:621 current_user:99367652
+Current time:05:30:20 users_left:620 current_user:201293719
+Current time:05:30:20 users_left:619 current_user:605342888
+Current time:05:30:20 users_left:618 current_user:1446921950
+Current time:05:30:20 users_left:617 current_user:88236973
+Current time:05:30:20 users_left:616 current_user:1969369358
+SECONDS TO SLEEP: 909s
+Time when to request again: 05:45:29
+Current time:05:30:20 users_left:615 current_user:110291524
+Current time:05:30:20 users_left:614 current_user:226558649
+Current time:05:30:20 users_left:613 current_user:1007551638
+Current time:05:30:20 users_left:612 current_user:1464390986
+Current time:05:30:20 users_left:611 current_user:131123830
+Current time:05:30:20 users_left:610 current_user:125036881
+Current time:05:30:20 users_left:609 current_user:631177284
+Current time:05:30:20 users_left:608 current_user:48320693
+Current time:05:30:21 users_left:607 current_user:169727308
+Current time:05:30:21 users_left:606 current_user:730512079
+Current time:05:30:21 users_left:605 current_user:1218439880
+Current time:05:30:21 users_left:604 current_user:59781222
+Current time:05:30:21 users_left:603 current_user:756867997
+Current time:05:30:21 users_left:602 current_user:70398928
+Current time:05:30:21 users_left:601 current_user:248619328
+Current time:05:30:21 users_left:600 current_user:253960325
+Current time:05:30:21 users_left:599 current_user:22796606
+Current time:05:30:21 users_left:598 current_user:58905582
+Current time:05:30:22 users_left:597 current_user:1880492911
+Current time:05:30:22 users_left:596 current_user:893740284
+Current time:05:30:22 users_left:595 current_user:389074267
+Current time:05:30:22 users_left:594 current_user:72807623
+Current time:05:30:22 users_left:593 current_user:1531678399
+Current time:05:30:22 users_left:592 current_user:219771617
+Current time:05:30:22 users_left:591 current_user:61745125
+Current time:05:30:22 users_left:590 current_user:2241413155
+Current time:05:30:22 users_left:589 current_user:153212015
+Current time:05:30:22 users_left:588 current_user:389074879
+Current time:05:30:22 users_left:587 current_user:171405775
+Current time:05:30:22 users_left:586 current_user:616579034
+Current time:05:30:22 users_left:585 current_user:459786318
+Current time:05:30:22 users_left:584 current_user:2249349974
+Current time:05:30:23 users_left:583 current_user:2186172660
+Current time:05:30:23 users_left:582 current_user:725049079
+Current time:05:30:23 users_left:581 current_user:1504733539
+Current time:05:30:23 users_left:580 current_user:326766427
+Current time:05:30:23 users_left:579 current_user:300190687
+Current time:05:30:23 users_left:578 current_user:490646507
+Current time:05:30:23 users_left:577 current_user:946719036
+Current time:05:30:23 users_left:576 current_user:936968755
+Current time:05:30:23 users_left:575 current_user:287209886
+Current time:05:30:23 users_left:574 current_user:1385407986
+Current time:05:30:23 users_left:573 current_user:895426771
+Current time:05:30:23 users_left:572 current_user:1746272443
+Current time:05:30:24 users_left:571 current_user:63159595
+Current time:05:30:24 users_left:570 current_user:44417479
+Current time:05:30:24 users_left:569 current_user:8411722
+Current time:05:30:24 users_left:568 current_user:29947055
+Current time:05:30:24 users_left:567 current_user:373301399
+Current time:05:30:24 users_left:566 current_user:1601126942
+Current time:05:30:24 users_left:565 current_user:249174479
+Current time:05:30:24 users_left:564 current_user:1081108626
+Current time:05:30:24 users_left:563 current_user:35333992
+Current time:05:30:24 users_left:562 current_user:1415593026
+Current time:05:30:24 users_left:561 current_user:352577057
+Current time:05:30:25 users_left:560 current_user:1551673555
+Current time:05:30:25 users_left:559 current_user:603857453
+Current time:05:30:25 users_left:558 current_user:390670677
+Current time:05:30:25 users_left:557 current_user:225189072
+Current time:05:30:25 users_left:556 current_user:2153465785
+Current time:05:30:25 users_left:555 current_user:95396739
+Current time:05:30:25 users_left:554 current_user:39024094
+Current time:05:30:25 users_left:553 current_user:380338445
+Current time:05:30:25 users_left:552 current_user:390807773
+Current time:05:30:25 users_left:551 current_user:215070958
+Current time:05:30:25 users_left:550 current_user:1701951763
+Current time:05:30:25 users_left:549 current_user:85786147
+Current time:05:30:25 users_left:548 current_user:18490806
+Current time:05:30:26 users_left:547 current_user:293423966
+Current time:05:30:26 users_left:546 current_user:141244242
+SECONDS TO SLEEP: 900s
+Time when to request again: 05:45:26
+SECONDS TO SLEEP: 909s
+Time when to request again: 05:45:35
+Current time:05:30:26 users_left:545 current_user:560723883
+Current time:05:30:26 users_left:544 current_user:15743176
+Current time:05:30:26 users_left:543 current_user:331134624
+Current time:05:30:26 users_left:542 current_user:35564957
+Current time:05:30:26 users_left:541 current_user:1393438729
+Current time:05:30:26 users_left:540 current_user:1528516274
+Current time:05:30:27 users_left:539 current_user:1147649658
+Current time:05:30:27 users_left:538 current_user:1122790038
+Current time:05:30:27 users_left:537 current_user:570874660
+Current time:05:30:27 users_left:536 current_user:457834511
+Current time:05:30:27 users_left:535 current_user:772512230
+Current time:05:30:27 users_left:534 current_user:99731297
+Current time:05:30:27 users_left:533 current_user:571637996
+Current time:05:30:27 users_left:532 current_user:950061445
+Current time:05:30:27 users_left:531 current_user:982826312
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:45:21
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:45:21
+Current time:05:30:28 users_left:530 current_user:98193177
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:45:21
+Current time:05:30:28 users_left:529 current_user:75191151
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:45:21
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:45:21
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:45:21
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:45:21
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 05:45:21
+Current time:05:45:22 users_left:528 current_user:372182181
+Current time:05:45:22 users_left:527 current_user:614334922
+Current time:05:45:22 users_left:526 current_user:323342637
+Current time:05:45:22 users_left:525 current_user:1707390432
+Current time:05:45:22 users_left:524 current_user:914263532
+Current time:05:45:22 users_left:523 current_user:2157581772
+Current time:05:45:22 users_left:522 current_user:314505037
+Current time:05:45:22 users_left:521 current_user:337605278
+Current time:05:45:22 users_left:520 current_user:1449727284
+Current time:05:45:22 users_left:519 current_user:292901755
+Current time:05:45:22 users_left:518 current_user:144160123
+Current time:05:45:22 users_left:517 current_user:467938930
+Current time:05:45:22 users_left:516 current_user:351453418
+Current time:05:45:22 users_left:515 current_user:1346703894
+Current time:05:45:23 users_left:514 current_user:1794097232
+Current time:05:45:23 users_left:513 current_user:1092279050
+Current time:05:45:23 users_left:512 current_user:22713314
+Current time:05:45:23 users_left:511 current_user:237350687
+Current time:05:45:23 users_left:510 current_user:631073996
+Current time:05:45:23 users_left:509 current_user:985460342
+Current time:05:45:23 users_left:508 current_user:495854277
+Current time:05:45:23 users_left:507 current_user:431921720
+Current time:05:45:23 users_left:506 current_user:565896256
+Current time:05:45:23 users_left:505 current_user:91894980
+Current time:05:45:24 users_left:504 current_user:2221762184
+Current time:05:45:24 users_left:503 current_user:196341028
+Current time:05:45:24 users_left:502 current_user:331628140
+Current time:05:45:24 users_left:501 current_user:49147623
+Current time:05:45:24 users_left:500 current_user:2188449788
+Current time:05:45:24 users_left:499 current_user:47981966
+Current time:05:45:24 users_left:498 current_user:471838758
+Current time:05:45:24 users_left:497 current_user:1691382582
+Current time:05:45:24 users_left:496 current_user:461672433
+Current time:05:45:24 users_left:495 current_user:616572085
+Current time:05:45:24 users_left:494 current_user:110678030
+Current time:05:45:24 users_left:493 current_user:15273725
+Current time:05:45:24 users_left:492 current_user:776989364
+Current time:05:45:24 users_left:491 current_user:943081915
+Current time:05:45:25 users_left:490 current_user:72661795
+Current time:05:45:25 users_left:489 current_user:372734252
+Current time:05:45:25 users_left:488 current_user:450300621
+Current time:05:45:25 users_left:487 current_user:113700337
+Current time:05:45:25 users_left:486 current_user:108043778
+Current time:05:45:25 users_left:485 current_user:306230940
+Current time:05:45:25 users_left:484 current_user:147924005
+Current time:05:45:25 users_left:483 current_user:458776580
+Current time:05:45:25 users_left:482 current_user:747094657
+Current time:05:45:25 users_left:481 current_user:500728005
+Current time:05:45:26 users_left:480 current_user:616257228
+Current time:05:45:26 users_left:479 current_user:622446660
+Current time:05:45:26 users_left:478 current_user:2236766994
+Current time:05:45:26 users_left:477 current_user:964027286
+Current time:05:45:26 users_left:476 current_user:256069550
+Current time:05:45:26 users_left:475 current_user:190558388
+Current time:05:45:26 users_left:474 current_user:881198096
+Current time:05:45:26 users_left:473 current_user:1712828042
+Current time:05:45:26 users_left:472 current_user:1408487522
+Current time:05:45:26 users_left:471 current_user:112821296
+Current time:05:45:26 users_left:470 current_user:30429485
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:00:35
+Current time:05:45:26 users_left:469 current_user:492669393
+Current time:05:45:26 users_left:468 current_user:167383049
+Current time:05:45:26 users_left:467 current_user:1069208648
+Current time:05:45:27 users_left:466 current_user:223528168
+Current time:05:45:27 users_left:465 current_user:83842633
+Current time:05:45:27 users_left:464 current_user:280073763
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:00:36
+Current time:05:45:27 users_left:463 current_user:1135542505
+Current time:05:45:27 users_left:462 current_user:30736943
+Current time:05:45:27 users_left:461 current_user:2155126520
+Current time:05:45:27 users_left:460 current_user:117806142
+Current time:05:45:27 users_left:459 current_user:201663560
+Current time:05:45:27 users_left:458 current_user:1145809999
+Current time:05:45:27 users_left:457 current_user:468532955
+Current time:05:45:27 users_left:456 current_user:1247376938
+Current time:05:45:27 users_left:455 current_user:1630525818
+Current time:05:45:27 users_left:454 current_user:810903752
+Current time:05:45:28 users_left:453 current_user:223658332
+Current time:05:45:28 users_left:452 current_user:288208029
+Current time:05:45:28 users_left:451 current_user:1923480186
+Current time:05:45:28 users_left:450 current_user:859224643
+Current time:05:45:28 users_left:449 current_user:1587929479
+Current time:05:45:28 users_left:448 current_user:1513446224
+Current time:05:45:28 users_left:447 current_user:116228195
+Current time:05:45:28 users_left:446 current_user:302768691
+Current time:05:45:28 users_left:445 current_user:1409623386
+Current time:05:45:28 users_left:444 current_user:232120142
+Current time:05:45:28 users_left:443 current_user:2182100658
+Current time:05:45:29 users_left:442 current_user:37671137
+Current time:05:45:29 users_left:441 current_user:926472373
+Current time:05:45:29 users_left:440 current_user:22270284
+Current time:05:45:29 users_left:439 current_user:62588549
+Current time:05:45:29 users_left:438 current_user:863030310
+Current time:05:45:29 users_left:437 current_user:1327675867
+Current time:05:45:29 users_left:436 current_user:78796325
+Current time:05:45:29 users_left:435 current_user:346914308
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:00:38
+Current time:05:45:29 users_left:434 current_user:617238327
+Current time:05:45:29 users_left:433 current_user:502958516
+Current time:05:45:29 users_left:432 current_user:432976287
+Current time:05:45:29 users_left:431 current_user:1283374903
+Current time:05:45:29 users_left:430 current_user:1273069351
+Current time:05:45:30 users_left:429 current_user:751229348
+Current time:05:45:30 users_left:428 current_user:880067990
+Current time:05:45:30 users_left:427 current_user:23600385
+Current time:05:45:30 users_left:426 current_user:1092123798
+Current time:05:45:30 users_left:425 current_user:339588665
+Current time:05:45:30 users_left:424 current_user:383133889
+Current time:05:45:30 users_left:423 current_user:204685206
+Current time:05:45:31 users_left:422 current_user:155559902
+Current time:05:45:31 users_left:421 current_user:515874989
+Current time:05:45:31 users_left:420 current_user:479819546
+Current time:05:45:31 users_left:419 current_user:50860186
+Current time:05:45:31 users_left:418 current_user:2236601826
+Current time:05:45:31 users_left:417 current_user:1097169374
+Current time:05:45:31 users_left:416 current_user:997566523
+Going to sleep for 895 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:00:26
+Current time:05:45:31 users_left:415 current_user:958230492
+Current time:05:45:31 users_left:414 current_user:221221938
+Current time:05:45:31 users_left:413 current_user:38069317
+Current time:05:45:31 users_left:412 current_user:2155768459
+Current time:05:45:31 users_left:411 current_user:857485544
+Going to sleep for 895 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:00:26
+Current time:05:45:32 users_left:410 current_user:13314032
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:00:26
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:00:26
+Current time:05:45:32 users_left:409 current_user:43966857
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:00:26
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:00:26
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:00:26
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:00:26
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:00:44
+Current time:06:00:27 users_left:408 current_user:351465423
+Current time:06:00:27 users_left:407 current_user:1238873905
+Current time:06:00:27 users_left:406 current_user:526597348
+Current time:06:00:27 users_left:405 current_user:709742661
+Current time:06:00:27 users_left:404 current_user:1172554544
+Current time:06:00:27 users_left:403 current_user:114419248
+Current time:06:00:27 users_left:402 current_user:1142327888
+Current time:06:00:27 users_left:401 current_user:582288078
+Current time:06:00:27 users_left:400 current_user:311448617
+Current time:06:00:27 users_left:399 current_user:709145629
+Current time:06:00:27 users_left:398 current_user:1459134720
+Current time:06:00:27 users_left:397 current_user:465119562
+Current time:06:00:27 users_left:396 current_user:2177399165
+Current time:06:00:27 users_left:395 current_user:105100309
+Current time:06:00:28 users_left:394 current_user:301025719
+Current time:06:00:28 users_left:393 current_user:1941346986
+Current time:06:00:28 users_left:392 current_user:423875824
+Current time:06:00:28 users_left:391 current_user:1130456407
+Current time:06:00:28 users_left:390 current_user:293781788
+Current time:06:00:28 users_left:389 current_user:398162080
+Current time:06:00:28 users_left:388 current_user:908426696
+Current time:06:00:28 users_left:387 current_user:518085452
+Current time:06:00:28 users_left:386 current_user:1639011025
+Current time:06:00:29 users_left:385 current_user:964219410
+Current time:06:00:29 users_left:384 current_user:444008378
+Current time:06:00:29 users_left:383 current_user:433314974
+Current time:06:00:29 users_left:382 current_user:22285577
+Current time:06:00:29 users_left:381 current_user:271184897
+Current time:06:00:29 users_left:380 current_user:1245748339
+Current time:06:00:29 users_left:379 current_user:353151183
+Current time:06:00:29 users_left:378 current_user:467829801
+Current time:06:00:29 users_left:377 current_user:549270887
+Current time:06:00:29 users_left:376 current_user:1555830127
+Current time:06:00:29 users_left:375 current_user:1464134731
+Current time:06:00:29 users_left:374 current_user:1212797714
+Current time:06:00:29 users_left:373 current_user:288312883
+Current time:06:00:29 users_left:372 current_user:150474389
+Current time:06:00:30 users_left:371 current_user:1067039010
+Current time:06:00:30 users_left:370 current_user:1027158343
+Current time:06:00:30 users_left:369 current_user:1514789743
+Current time:06:00:30 users_left:368 current_user:1590440546
+Current time:06:00:30 users_left:367 current_user:1922815274
+Current time:06:00:30 users_left:366 current_user:290672916
+Current time:06:00:30 users_left:365 current_user:948559790
+Current time:06:00:30 users_left:364 current_user:49941238
+Current time:06:00:30 users_left:363 current_user:166215350
+Current time:06:00:31 users_left:362 current_user:518275463
+Current time:06:00:31 users_left:361 current_user:728936438
+Current time:06:00:31 users_left:360 current_user:164194169
+Current time:06:00:31 users_left:359 current_user:66694062
+Current time:06:00:31 users_left:358 current_user:324433554
+Current time:06:00:31 users_left:357 current_user:701850818
+Current time:06:00:31 users_left:356 current_user:300791071
+Current time:06:00:31 users_left:355 current_user:402342078
+Current time:06:00:31 users_left:354 current_user:57051871
+Current time:06:00:31 users_left:353 current_user:809791483
+Current time:06:00:31 users_left:352 current_user:2157230502
+Current time:06:00:31 users_left:351 current_user:109435682
+Current time:06:00:31 users_left:350 current_user:187514147
+Current time:06:00:31 users_left:349 current_user:1337819798
+Current time:06:00:32 users_left:348 current_user:571310280
+Current time:06:00:32 users_left:347 current_user:50617542
+Current time:06:00:32 users_left:346 current_user:19705295
+Current time:06:00:32 users_left:345 current_user:1522748028
+Current time:06:00:32 users_left:344 current_user:94108440
+Current time:06:00:32 users_left:343 current_user:70839090
+Current time:06:00:32 users_left:342 current_user:411641231
+Current time:06:00:32 users_left:341 current_user:395669484
+Current time:06:00:32 users_left:340 current_user:1006028449
+Current time:06:00:32 users_left:339 current_user:1215728821
+Current time:06:00:33 users_left:338 current_user:89672743
+Current time:06:00:33 users_left:337 current_user:543635074
+Current time:06:00:33 users_left:336 current_user:112317887
+Current time:06:00:33 users_left:335 current_user:270897426
+Current time:06:00:33 users_left:334 current_user:1597411460
+Current time:06:00:33 users_left:333 current_user:563703411
+Current time:06:00:33 users_left:332 current_user:102986807
+Current time:06:00:33 users_left:331 current_user:264207181
+Current time:06:00:33 users_left:330 current_user:722665628
+Current time:06:00:33 users_left:329 current_user:1886656158
+Current time:06:00:33 users_left:328 current_user:286125940
+Current time:06:00:33 users_left:327 current_user:311129388
+Current time:06:00:34 users_left:326 current_user:112383288
+Current time:06:00:34 users_left:325 current_user:471280400
+Current time:06:00:34 users_left:324 current_user:519735060
+Current time:06:00:34 users_left:323 current_user:297998310
+Current time:06:00:34 users_left:322 current_user:1698725311
+Current time:06:00:34 users_left:321 current_user:1159962457
+Current time:06:00:34 users_left:320 current_user:968352608
+Current time:06:00:34 users_left:319 current_user:138462270
+Current time:06:00:34 users_left:318 current_user:381206235
+Current time:06:00:34 users_left:317 current_user:111965950
+Current time:06:00:34 users_left:316 current_user:408883037
+Current time:06:00:35 users_left:315 current_user:458219112
+Current time:06:00:35 users_left:314 current_user:583845328
+Current time:06:00:35 users_left:313 current_user:152040807
+Current time:06:00:35 users_left:312 current_user:332183877
+Current time:06:00:35 users_left:311 current_user:1700127042
+Current time:06:00:35 users_left:310 current_user:1146528552
+Current time:06:00:35 users_left:309 current_user:165448709
+Current time:06:00:35 users_left:308 current_user:47828559
+Current time:06:00:35 users_left:307 current_user:80301655
+Current time:06:00:35 users_left:306 current_user:305845598
+Current time:06:00:36 users_left:305 current_user:159948854
+Current time:06:00:36 users_left:304 current_user:108458945
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:15:45
+Current time:06:00:36 users_left:303 current_user:1667337139
+Current time:06:00:36 users_left:302 current_user:15659381
+Current time:06:00:36 users_left:301 current_user:355473473
+Current time:06:00:36 users_left:300 current_user:1129549706
+Current time:06:00:36 users_left:299 current_user:103401531
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:15:45
+Current time:06:00:36 users_left:298 current_user:20406471
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:15:31
+Current time:06:00:37 users_left:297 current_user:181652270
+Current time:06:00:37 users_left:296 current_user:1097785778
+Current time:06:00:37 users_left:295 current_user:445700442
+Current time:06:00:37 users_left:294 current_user:236879624
+Current time:06:00:37 users_left:293 current_user:270640445
+SECONDS TO SLEEP: 899s
+Time when to request again: 06:15:36
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:15:31
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:15:31
+Current time:06:00:37 users_left:292 current_user:364249285
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:15:31
+Current time:06:00:37 users_left:291 current_user:2164746892
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:15:31
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:15:31
+Current time:06:00:38 users_left:290 current_user:254142145
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:15:47
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:15:32
+SECONDS TO SLEEP: 908s
+Time when to request again: 06:15:53
+Current time:06:15:32 users_left:289 current_user:876424279
+Current time:06:15:32 users_left:288 current_user:219246147
+Current time:06:15:32 users_left:287 current_user:28224655
+Current time:06:15:32 users_left:286 current_user:1069453278
+Current time:06:15:32 users_left:285 current_user:783058314
+Current time:06:15:32 users_left:284 current_user:18603070
+Current time:06:15:32 users_left:283 current_user:2166360355
+Current time:06:15:32 users_left:282 current_user:1135143980
+Current time:06:15:32 users_left:281 current_user:1061234401
+Current time:06:15:32 users_left:280 current_user:193737668
+Current time:06:15:33 users_left:279 current_user:485873514
+Current time:06:15:33 users_left:278 current_user:131821314
+Current time:06:15:33 users_left:277 current_user:57610843
+Current time:06:15:33 users_left:276 current_user:379722435
+Current time:06:15:33 users_left:275 current_user:179884431
+Current time:06:15:33 users_left:274 current_user:134763820
+Current time:06:15:33 users_left:273 current_user:49573732
+Current time:06:15:33 users_left:272 current_user:571337190
+Current time:06:15:33 users_left:271 current_user:991926121
+Current time:06:15:33 users_left:270 current_user:595311868
+Current time:06:15:34 users_left:269 current_user:2169275737
+Current time:06:15:34 users_left:268 current_user:433221671
+Current time:06:15:34 users_left:267 current_user:770329770
+Current time:06:15:34 users_left:266 current_user:187689043
+Current time:06:15:34 users_left:265 current_user:386568475
+Current time:06:15:34 users_left:264 current_user:602838039
+Current time:06:15:34 users_left:263 current_user:104220572
+Current time:06:15:35 users_left:262 current_user:407693026
+Current time:06:15:35 users_left:261 current_user:1090009244
+Current time:06:15:35 users_left:260 current_user:126932769
+Current time:06:15:35 users_left:259 current_user:101296704
+Current time:06:15:35 users_left:258 current_user:512133730
+Current time:06:15:35 users_left:257 current_user:934127077
+Current time:06:15:35 users_left:256 current_user:107414155
+Current time:06:15:35 users_left:255 current_user:1099465273
+Current time:06:15:35 users_left:254 current_user:14855564
+Current time:06:15:35 users_left:253 current_user:257865326
+Current time:06:15:35 users_left:252 current_user:968708828
+Current time:06:15:35 users_left:251 current_user:1386871206
+Current time:06:15:36 users_left:250 current_user:337284551
+Current time:06:15:36 users_left:249 current_user:1729528621
+Current time:06:15:36 users_left:248 current_user:93114219
+Current time:06:15:36 users_left:247 current_user:30066822
+Current time:06:15:36 users_left:246 current_user:154888802
+Current time:06:15:36 users_left:245 current_user:239159533
+Current time:06:15:36 users_left:244 current_user:522344030
+Current time:06:15:36 users_left:243 current_user:623823142
+Current time:06:15:36 users_left:242 current_user:2196386588
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:30:45
+SECONDS TO SLEEP: 905s
+Time when to request again: 06:30:41
+Current time:06:15:37 users_left:241 current_user:489787616
+Current time:06:15:37 users_left:240 current_user:950150995
+Current time:06:15:37 users_left:239 current_user:550286945
+Current time:06:15:37 users_left:238 current_user:300589724
+Current time:06:15:37 users_left:237 current_user:394334557
+Current time:06:15:37 users_left:236 current_user:36241318
+Current time:06:15:37 users_left:235 current_user:149945772
+Current time:06:15:37 users_left:234 current_user:208755349
+Current time:06:15:38 users_left:233 current_user:606541503
+Current time:06:15:38 users_left:232 current_user:36059985
+Current time:06:15:38 users_left:231 current_user:120889451
+Current time:06:15:38 users_left:230 current_user:556349998
+Current time:06:15:38 users_left:229 current_user:1180642411
+Current time:06:15:38 users_left:228 current_user:1949921971
+Current time:06:15:38 users_left:227 current_user:1694521656
+Current time:06:15:38 users_left:226 current_user:72373745
+Current time:06:15:39 users_left:225 current_user:632006890
+Current time:06:15:39 users_left:224 current_user:285167228
+Current time:06:15:39 users_left:223 current_user:222886377
+Current time:06:15:39 users_left:222 current_user:74496057
+Current time:06:15:39 users_left:221 current_user:1525959930
+Current time:06:15:39 users_left:220 current_user:34331679
+Current time:06:15:39 users_left:219 current_user:332289019
+Current time:06:15:39 users_left:218 current_user:149101679
+Current time:06:15:40 users_left:217 current_user:811790035
+Current time:06:15:40 users_left:216 current_user:389556206
+Current time:06:15:40 users_left:215 current_user:1667209464
+Current time:06:15:40 users_left:214 current_user:25075820
+Current time:06:15:40 users_left:213 current_user:601313097
+Current time:06:15:40 users_left:212 current_user:107478593
+Current time:06:15:40 users_left:211 current_user:293640821
+Current time:06:15:40 users_left:210 current_user:502831048
+Current time:06:15:40 users_left:209 current_user:200193620
+Current time:06:15:40 users_left:208 current_user:116993765
+Current time:06:15:41 users_left:207 current_user:109624179
+Current time:06:15:41 users_left:206 current_user:226190817
+Current time:06:15:41 users_left:205 current_user:719354540
+Current time:06:15:41 users_left:204 current_user:282940252
+Current time:06:15:41 users_left:203 current_user:201856446
+Current time:06:15:42 users_left:202 current_user:223582661
+Current time:06:15:42 users_left:201 current_user:1650085386
+Current time:06:15:42 users_left:200 current_user:1452841824
+Current time:06:15:42 users_left:199 current_user:1495044816
+Current time:06:15:42 users_left:198 current_user:1694794290
+Current time:06:15:42 users_left:197 current_user:910574544
+Current time:06:15:42 users_left:196 current_user:543264260
+Current time:06:15:42 users_left:195 current_user:191526100
+Current time:06:15:43 users_left:194 current_user:1537763102
+Current time:06:15:43 users_left:193 current_user:1400281783
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:30:36
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:30:36
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:30:36
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:30:36
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:30:37
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:30:36
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:30:54
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:30:55
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:30:57
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:31:02
+Current time:06:30:37 users_left:192 current_user:185174877
+Current time:06:30:37 users_left:191 current_user:50281501
+Current time:06:30:37 users_left:190 current_user:322840151
+Current time:06:30:37 users_left:189 current_user:361210822
+Current time:06:30:37 users_left:188 current_user:19441478
+Current time:06:30:38 users_left:187 current_user:58511669
+Current time:06:30:38 users_left:186 current_user:354009865
+Current time:06:30:38 users_left:185 current_user:195302946
+Current time:06:30:38 users_left:184 current_user:579938632
+Current time:06:30:38 users_left:183 current_user:788850372
+Current time:06:30:38 users_left:182 current_user:36222077
+Current time:06:30:38 users_left:181 current_user:26036304
+Current time:06:30:38 users_left:180 current_user:1017886603
+Current time:06:30:38 users_left:179 current_user:1410715994
+Current time:06:30:38 users_left:178 current_user:1057921759
+Current time:06:30:38 users_left:177 current_user:396152089
+Current time:06:30:39 users_left:176 current_user:66799285
+Current time:06:30:39 users_left:175 current_user:476096996
+Current time:06:30:39 users_left:174 current_user:270349231
+Current time:06:30:39 users_left:173 current_user:83449814
+Current time:06:30:39 users_left:172 current_user:951874322
+Current time:06:30:39 users_left:171 current_user:1273608576
+Current time:06:30:39 users_left:170 current_user:182756886
+Current time:06:30:40 users_left:169 current_user:145291826
+Current time:06:30:40 users_left:168 current_user:1291894621
+Current time:06:30:40 users_left:167 current_user:32708313
+Current time:06:30:40 users_left:166 current_user:622962500
+Current time:06:30:40 users_left:165 current_user:1694896490
+Current time:06:30:40 users_left:164 current_user:613001838
+Current time:06:30:40 users_left:163 current_user:137801105
+Current time:06:30:40 users_left:162 current_user:248759721
+Current time:06:30:40 users_left:161 current_user:73854656
+Current time:06:30:41 users_left:160 current_user:321444002
+Current time:06:30:41 users_left:159 current_user:1523412318
+Current time:06:30:41 users_left:158 current_user:95242849
+Current time:06:30:41 users_left:157 current_user:1630724581
+Current time:06:30:41 users_left:156 current_user:851017554
+Current time:06:30:41 users_left:155 current_user:1604904997
+Current time:06:30:41 users_left:154 current_user:26182834
+Current time:06:30:41 users_left:153 current_user:346464946
+Current time:06:30:41 users_left:152 current_user:280973928
+Current time:06:30:42 users_left:151 current_user:556436688
+Current time:06:30:42 users_left:150 current_user:515805019
+Current time:06:30:42 users_left:149 current_user:21082906
+Current time:06:30:42 users_left:148 current_user:93397114
+Current time:06:30:42 users_left:147 current_user:526474963
+Current time:06:30:42 users_left:146 current_user:1620130692
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:45:51
+Current time:06:30:42 users_left:145 current_user:57388137
+Current time:06:30:42 users_left:144 current_user:302074901
+Current time:06:30:43 users_left:143 current_user:89084143
+Current time:06:30:43 users_left:142 current_user:291291804
+Current time:06:30:43 users_left:141 current_user:16401364
+Current time:06:30:43 users_left:140 current_user:1544538109
+Current time:06:30:43 users_left:139 current_user:875074010
+Current time:06:30:43 users_left:138 current_user:241683346
+Current time:06:30:43 users_left:137 current_user:384510296
+Current time:06:30:43 users_left:136 current_user:331016567
+Current time:06:30:43 users_left:135 current_user:1465879484
+Current time:06:30:44 users_left:134 current_user:110671255
+Current time:06:30:44 users_left:133 current_user:304166446
+Current time:06:30:44 users_left:132 current_user:152223675
+Current time:06:30:44 users_left:131 current_user:1272427549
+Current time:06:30:44 users_left:130 current_user:235766802
+Current time:06:30:44 users_left:129 current_user:308990958
+Current time:06:30:44 users_left:128 current_user:789815929
+Current time:06:30:44 users_left:127 current_user:111668921
+Current time:06:30:44 users_left:126 current_user:360250366
+Current time:06:30:45 users_left:125 current_user:107600364
+Current time:06:30:45 users_left:124 current_user:999289890
+Current time:06:30:45 users_left:123 current_user:994166516
+Current time:06:30:45 users_left:122 current_user:72137500
+Current time:06:30:45 users_left:121 current_user:115807265
+Current time:06:30:45 users_left:120 current_user:1681164068
+Current time:06:30:45 users_left:119 current_user:81373661
+Current time:06:30:45 users_left:118 current_user:1175813016
+Current time:06:30:46 users_left:117 current_user:197356910
+Current time:06:30:46 users_left:116 current_user:127623853
+Current time:06:30:46 users_left:115 current_user:270858270
+Current time:06:30:46 users_left:114 current_user:180042245
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:45:55
+Current time:06:30:47 users_left:113 current_user:95410008
+Current time:06:30:47 users_left:112 current_user:64248173
+Current time:06:30:47 users_left:111 current_user:148359036
+Current time:06:30:47 users_left:110 current_user:1173170149
+Current time:06:30:47 users_left:109 current_user:487844264
+Current time:06:30:47 users_left:108 current_user:1472456256
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:45:41
+Current time:06:30:47 users_left:107 current_user:128184854
+Current time:06:30:47 users_left:106 current_user:17853463
+Current time:06:30:47 users_left:105 current_user:393554307
+Current time:06:30:47 users_left:104 current_user:1877028360
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:45:41
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:45:41
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:45:41
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:45:41
+Current time:06:30:48 users_left:103 current_user:836188921
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 06:45:42
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:46:04
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:46:04
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:46:06
+SECONDS TO SLEEP: 909s
+Time when to request again: 06:46:11
+Current time:06:45:42 users_left:102 current_user:230884454
+Current time:06:45:42 users_left:101 current_user:102191189
+Current time:06:45:42 users_left:100 current_user:283548263
+Current time:06:45:42 users_left:99 current_user:172299561
+Current time:06:45:42 users_left:98 current_user:45811438
+Current time:06:45:42 users_left:97 current_user:555295971
+Current time:06:45:43 users_left:96 current_user:299227542
+Current time:06:45:43 users_left:95 current_user:1334708606
+Current time:06:45:43 users_left:94 current_user:170601130
+Current time:06:45:43 users_left:93 current_user:1163336262
+Current time:06:45:43 users_left:92 current_user:595454795
+Current time:06:45:43 users_left:91 current_user:476316509
+Current time:06:45:43 users_left:90 current_user:299184529
+Current time:06:45:43 users_left:89 current_user:313329058
+Current time:06:45:44 users_left:88 current_user:97413847
+Current time:06:45:44 users_left:87 current_user:627392184
+Current time:06:45:44 users_left:86 current_user:27077477
+Current time:06:45:44 users_left:85 current_user:775856210
+Current time:06:45:44 users_left:84 current_user:87042455
+Current time:06:45:44 users_left:83 current_user:124521747
+Current time:06:45:44 users_left:82 current_user:273154956
+Current time:06:45:44 users_left:81 current_user:264206260
+Current time:06:45:44 users_left:80 current_user:1498043263
+Current time:06:45:44 users_left:79 current_user:181490985
+Current time:06:45:45 users_left:78 current_user:506347457
+Current time:06:45:45 users_left:77 current_user:97987052
+Current time:06:45:45 users_left:76 current_user:233715728
+Current time:06:45:45 users_left:75 current_user:168710510
+Current time:06:45:45 users_left:74 current_user:327881216
+Current time:06:45:45 users_left:73 current_user:1018311763
+Current time:06:45:45 users_left:72 current_user:37723139
+Current time:06:45:46 users_left:71 current_user:531410008
+Current time:06:45:46 users_left:70 current_user:237346415
+Current time:06:45:46 users_left:69 current_user:565835772
+Current time:06:45:46 users_left:68 current_user:341485760
+Current time:06:45:46 users_left:67 current_user:22983722
+Current time:06:45:46 users_left:66 current_user:495371658
+Current time:06:45:46 users_left:65 current_user:1562993648
+Current time:06:45:46 users_left:64 current_user:297544039
+Current time:06:45:46 users_left:63 current_user:1422882625
+Current time:06:45:46 users_left:62 current_user:526994276
+Current time:06:45:47 users_left:61 current_user:1335111181
+Current time:06:45:47 users_left:60 current_user:14925635
+Current time:06:45:47 users_left:59 current_user:43542632
+Current time:06:45:47 users_left:58 current_user:1699193299
+Current time:06:45:47 users_left:57 current_user:958679342
+Current time:06:45:47 users_left:56 current_user:68151986
+Current time:06:45:47 users_left:55 current_user:419620841
+Current time:06:45:47 users_left:54 current_user:516784109
+Current time:06:45:48 users_left:53 current_user:991303110
+Current time:06:45:48 users_left:52 current_user:104170349
+Current time:06:45:48 users_left:51 current_user:104629262
+Current time:06:45:48 users_left:50 current_user:100215993
+Current time:06:45:48 users_left:49 current_user:569217864
+Current time:06:45:48 users_left:48 current_user:852906121
+Current time:06:45:48 users_left:47 current_user:1212569144
+Current time:06:45:49 users_left:46 current_user:41836471
+Current time:06:45:49 users_left:45 current_user:1142977723
+Current time:06:45:49 users_left:44 current_user:2236498484
+Current time:06:45:49 users_left:43 current_user:33950547
+Current time:06:45:49 users_left:42 current_user:252220297
+Current time:06:45:49 users_left:41 current_user:198603416
+Current time:06:45:49 users_left:40 current_user:1291633830
+Current time:06:45:49 users_left:39 current_user:1061921604
+Current time:06:45:49 users_left:38 current_user:904676442
+Current time:06:45:50 users_left:37 current_user:701658234
+Current time:06:45:50 users_left:36 current_user:256843089
+Current time:06:45:50 users_left:35 current_user:53404439
+Current time:06:45:50 users_left:34 current_user:309613185
+Current time:06:45:50 users_left:33 current_user:184354704
+Current time:06:45:50 users_left:32 current_user:242117780
+Current time:06:45:50 users_left:31 current_user:49782926
+Current time:06:45:50 users_left:30 current_user:162499384
+Current time:06:45:50 users_left:29 current_user:1155129073
+SECONDS TO SLEEP: 901s
+Time when to request again: 07:00:51
+Current time:06:45:51 users_left:28 current_user:342279128
+Current time:06:45:51 users_left:27 current_user:470521538
+Current time:06:45:51 users_left:26 current_user:35303817
+Current time:06:45:51 users_left:25 current_user:47454567
+Current time:06:45:51 users_left:24 current_user:1035758738
+Current time:06:45:52 users_left:23 current_user:50347495
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:01:01
+Current time:06:45:52 users_left:22 current_user:203593466
+Current time:06:45:52 users_left:21 current_user:1615800500
+Current time:06:45:52 users_left:20 current_user:131337492
+Current time:06:45:52 users_left:19 current_user:225353362
+Going to sleep for 894 seconds cause the rate limit status for friends told me so
+Time when to continue: 07:00:46
+Current time:06:45:52 users_left:18 current_user:412388562
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 07:00:46
+Current time:06:45:53 users_left:17 current_user:22598009
+Going to sleep for 893 seconds cause the rate limit status for friends told me so
+Time when to continue: 07:00:46
+SECONDS TO SLEEP: 899s
+Time when to request again: 07:00:52
+Current time:06:45:53 users_left:16 current_user:115864366
+SECONDS TO SLEEP: 897s
+Time when to request again: 07:00:51
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:01:04
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:01:13
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:01:14
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:01:15
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:01:20
+Current time:07:00:47 users_left:15 current_user:712095373
+Current time:07:00:47 users_left:14 current_user:215692792
+Current time:07:00:47 users_left:13 current_user:201060091
+Current time:07:00:48 users_left:12 current_user:181519878
+Current time:07:00:48 users_left:11 current_user:119534984
+Current time:07:00:48 users_left:10 current_user:1264258969
+Current time:07:00:48 users_left:9 current_user:46551748
+Current time:07:00:48 users_left:8 current_user:103996599
+SECONDS TO SLEEP: 907s
+Time when to request again: 07:15:56
+Current time:07:00:49 users_left:7 current_user:252558181
+Current time:07:00:49 users_left:6 current_user:14457931
+Current time:07:00:50 users_left:5 current_user:495570625
+Current time:07:00:50 users_left:4 current_user:99277885
+Current time:07:00:51 users_left:3 current_user:17636040
+Current time:07:00:51 users_left:2 current_user:133776885
+Current time:07:00:51 users_left:1 current_user:46072156
+Current time:07:00:51 users_left:0 current_user:711958284
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:16:01
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:16:10
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:16:13
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:16:23
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:16:23
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:16:24
+SECONDS TO SLEEP: 908s
+Time when to request again: 07:16:29
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:31:06
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:31:10
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:31:20
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:31:23
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:31:32
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:31:33
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:31:33
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:31:38
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:46:16
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:46:19
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:46:30
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:46:32
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:46:42
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:46:42
+SECONDS TO SLEEP: 909s
+Time when to request again: 07:46:42
+SECONDS TO SLEEP: 908s
+Time when to request again: 07:46:47
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:01:26
+SECONDS TO SLEEP: 910s
+Time when to request again: 08:01:29
+SECONDS TO SLEEP: 910s
+Time when to request again: 08:01:40
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:01:41
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:01:52
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:01:52
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:01:52
+SECONDS TO SLEEP: 908s
+Time when to request again: 08:01:56
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:16:36
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:16:39
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:16:50
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:16:51
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:17:01
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:17:02
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:17:02
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:17:05
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:31:46
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:31:48
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:32:00
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:32:00
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:32:11
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:32:11
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:32:11
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:32:14
+SECONDS TO SLEEP: 910s
+Time when to request again: 08:46:57
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:46:57
+SECONDS TO SLEEP: 910s
+Time when to request again: 08:47:10
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:47:10
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:47:21
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:47:21
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:47:21
+SECONDS TO SLEEP: 909s
+Time when to request again: 08:47:23
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:48:16
+Time when to request again: 08:48:16
+Time when to request again: 08:48:16
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:48:16
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:48:26
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:48:26
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:48:26
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:48:42
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:49:35
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:49:35
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:49:35
+Time when to request again: 08:49:35
+Time when to request again: 08:49:35
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:49:35
+Time when to request again: 08:49:35
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:50:02
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:50:55
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:50:55
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:50:55
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:50:55
+Time when to request again: 08:50:55
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:50:55
+Time when to request again: 08:50:55
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:51:21
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:52:14
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:52:14
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:52:14
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:52:14
+Time when to request again: 08:52:14
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:52:14
+Time when to request again: 08:52:14
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:52:40
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:53:33
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:53:33
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:53:33
+Time when to request again: 08:53:33
+Time when to request again: 08:53:33
+Time when to request again: 08:53:33
+Time when to request again: 08:53:33
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:53:59
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:54:52
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:54:52
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:54:52
+Time when to request again: 08:54:52
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:54:52
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:54:52
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:54:52
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:55:19
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:56:12
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:56:12
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:56:12
+Time when to request again: 08:56:12
+Time when to request again: 08:56:12
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:56:12
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:56:12
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:56:38
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:57:31
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:57:31
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:57:31
+Time when to request again: 08:57:31
+Time when to request again: 08:57:31
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:57:31
+Time when to request again: 08:57:31
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:57:57
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:58:50
+Time when to request again: 08:58:50
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:58:50
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:58:50
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:58:50
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:58:50
+Time when to request again: 08:58:50
+SECONDS TO SLEEP: 65s
+Time when to request again: 08:59:16
+SECONDS TO SLEEP: 65s
+Time when to request again: 09:00:10
+SECONDS TO SLEEP: 65s
+SECONDS TO SLEEP: 65s
+Time when to request again: 09:00:10
+Time when to request again: 09:00:10
+SECONDS TO SLEEP: 65s
+Time when to request again: 09:00:10
+SECONDS TO SLEEP: 65s
+Time when to request again: 09:00:10
+SECONDS TO SLEEP: 65s
+Time when to request again: 09:00:10
+SECONDS TO SLEEP: 65s
+Time when to request again: 09:00:10
+SECONDS TO SLEEP: 65s
+Time when to request again: 09:00:36
