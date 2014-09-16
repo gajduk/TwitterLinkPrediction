@@ -10,11 +10,11 @@ public class Edge {
 		this.b = b;
 	}
 
-	public int getA() {
+	public int getR() {
 		return a;
 	}
 
-	public int getB() {
+	public int getC() {
 		return b;
 	}
 	

@@ -19,6 +19,8 @@ public class TwitterFeatureGraph {
 	ArrayList<Edge> edges;
 	ArrayList<Features> features;
 	
+	HashMap<Integer,Integer> indegree;
+	
 	public TwitterFeatureGraph(int n, int f,ArrayList<Edge> edges, ArrayList<Features> features) {
 		super();
 		this.n = n;
@@ -31,11 +33,17 @@ public class TwitterFeatureGraph {
 	private void populateG(ArrayList<Edge> edges2) {
 		g = new HashMap<Integer,HashSet<Integer>>();
 		edges.stream().forEach(e -> {
-			HashSet<Integer> h = g.get(e.getA());
+			HashSet<Integer> h = g.get(e.getR());
 			if ( h == null ) h = new HashSet<>();
-			h.add(e.getB());
-			g.put(e.getA(),h);
+			h.add(e.getC());
+			g.put(e.getR(),h);
 		});
+		indegree = new HashMap<>();
+		edges.stream().forEach(e -> indegree.put(e.getC(), indegree.getOrDefault(e.getC(),1)+1));
+	}
+	
+	public int getInDegreeForNode(int node) {
+		return indegree.getOrDefault(node,0);
 	}
 
 	public ArrayList<Features> getFeatures() {

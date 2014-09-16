@@ -7,20 +7,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import linkpred_batch.FeatureField;
 import utils.DatabaseManager;
 import utils.Utils;
-import cern.colt.matrix.tdouble.impl.DenseDoubleMatrix1D;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 
-import features.Feature;
 import features.FeatureExtractors;
 import features.Features;
 import features.TwitterFeatureGraph;
@@ -89,7 +85,7 @@ public class TwitterMapSnapshot {
 		ArrayList<Edge> edges = new ArrayList<Edge>();
 		for ( UserSnapshot us : getUsers() ) 
 			edges.addAll(us.getFollowers().stream().map(id -> new Edge(us.user.idx,user_ids.get(id).idx)).collect(Collectors.toList()));
-		
+		edges.sort((a,b) -> (a.a==b.a)?Integer.compare(a.b, b.b):Integer.compare(a.a, b.a));
 		return new TwitterFeatureGraph(users.size(), fes.size(),edges, list);
 	}
 	

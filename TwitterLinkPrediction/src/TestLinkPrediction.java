@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import linkpred_batch.FeatureField;
 import linkpred_batch.sDLGraph;
 import linkpred_batch.Ranker;
 import cern.colt.matrix.tdouble.impl.DenseDoubleMatrix1D;
@@ -28,7 +27,6 @@ public class TestLinkPrediction {
 		fes.add(FeatureExtractors.Random);
 		fes.add(FeatureExtractors.Random);
 		TwitterMapSnapshot tms = TwitterMapSnapshot.readFromFolder("time__05_00_02__date_15_03_2014");
-		System.out.println("Map parsed");
 //		TwitterFeatureGraph twg = tms.buildTwitterFeatureGraph(fes);
 //		sDLGraph[] train_rwgs = twg.generateNetworks(10);
 		
@@ -79,9 +77,7 @@ public class TestLinkPrediction {
 		*/
 		for ( double p = .0d ; p < .401d ; p += 0.0899d ) {
 			TwitterFeatureGraph twg = tms.buildTwitterFeatureGraph(fes).removeLinks(p);
-			System.out.println("graph build");
 			sDLGraph[] test_rwgs = twg.generateNetworks(10);
-			System.out.println("sdls  generated");
 			double []trueParameters = new double[f];
 			for ( int i = 0 ; i < f ; ++i )
 				trueParameters[i] = 0.000001d;

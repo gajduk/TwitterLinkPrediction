@@ -11,6 +11,10 @@
 	<classpathentry kind="lib" path="lib/junit.jar"/>
 	<classpathentry kind="lib" path="lib/netlib-java.jar"/>
 	<classpathentry kind="lib" path="lib/optimization.jar"/>
-	<classpathentry kind="lib" path="lib/parallelcolt-0.9.4.jar"/>
+	<classpathentry kind="lib" path="lib/parallelcolt-0.9.4.jar" sourcepath="C:/Users/Andrej Gajduk/Downloads/ParallelColt/src">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/Andrej%20Gajduk/Downloads/ParallelColt/doc/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
