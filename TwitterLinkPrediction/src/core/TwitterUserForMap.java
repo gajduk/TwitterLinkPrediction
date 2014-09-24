@@ -1,4 +1,7 @@
 package core;
+import java.io.Serializable;
+
+import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 
 
@@ -19,6 +22,10 @@ public class TwitterUserForMap {
 		catch (Exception e) {
 			return null;
 		}
+	}
+	
+	public DBObject getDBObject() {
+		return new BasicDBObject("id",id).append("idx",idx);
 	}
 
 	public int getIdx() {

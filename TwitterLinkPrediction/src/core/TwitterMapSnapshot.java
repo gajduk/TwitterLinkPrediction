@@ -85,7 +85,7 @@ public class TwitterMapSnapshot {
 		ArrayList<Edge> edges = new ArrayList<Edge>();
 		for ( UserSnapshot us : getUsers() ) 
 			edges.addAll(us.getFollowers().stream().map(id -> new Edge(us.user.idx,user_ids.get(id).idx)).collect(Collectors.toList()));
-		edges.sort((a,b) -> (a.a==b.a)?Integer.compare(a.b, b.b):Integer.compare(a.a, b.a));
+//		edges.sort((a,b) -> (a.a==b.a)?Integer.compare(a.b, b.b):Integer.compare(a.a, b.a));
 		return new TwitterFeatureGraph(users.size(), fes.size(),edges, list);
 	}
 	

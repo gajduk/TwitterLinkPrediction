@@ -1,5 +1,6 @@
 package features;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -16,7 +17,7 @@ import core.TwitterUserForMap;
 import core.TwitterMapSnapshot;
 import core.UserSnapshot;
 
-public enum FeatureExtractors implements FeatureExtractor{
+public enum FeatureExtractors implements FeatureExtractor {
 	
 	
 	Retwits {
@@ -112,6 +113,12 @@ public enum FeatureExtractors implements FeatureExtractor{
 		double avg = features.stream().map(Feature::getValue).reduce((a,b) -> a+b).get()/features.size();
 		double threshold = avg*10;
 		return features.stream().map(f -> new Feature(f.getU1(),f.getU2(),Math.max(f.getValue(),threshold))).collect(Collectors.toList());
+	}
+	
+	public static List<Feature> normalize(List<Feature> features) {
+		double mean = features.stream().map(Feature::getValue).reduce((a,b) -> a+b).get()/features.size();
+		double variance	= Math.sqrt(features.stream().map(f -> Math.pow(f.getValue()-mean,2.0d)).reduce((a, b) -> a+b).get()/(features.size()-1));
+		return features.stream().map(f -> new Feature(f.getU1(),f.getU2(),(f.getValue()-mean)/variance)).collect(Collectors.toList());
 	}
 
 }

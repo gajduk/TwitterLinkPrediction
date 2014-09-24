@@ -103,7 +103,7 @@ public class LinkPredictionTrainer {
 		
 		int num_threads = Runtime.getRuntime().availableProcessors()+1;             // concurrency
 		ThreadPoolExecutor executor = new ThreadPoolExecutor(num_threads,
-				20, Long.MAX_VALUE, TimeUnit.MINUTES, new ArrayBlockingQueue<Runnable>(g));  
+				g, Long.MAX_VALUE, TimeUnit.MINUTES, new ArrayBlockingQueue<Runnable>(g));  
 		
 		for (int k = 0; k < g; k++) { 
 			final sDLGraph graph = graphs[k];

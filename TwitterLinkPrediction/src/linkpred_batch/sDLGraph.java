@@ -3,6 +3,7 @@ package linkpred_batch;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import cern.colt.Arrays;
 import cern.colt.function.tdouble.DoubleDoubleFunction;
 import cern.colt.matrix.tdouble.DoubleMatrix1D;
 import cern.colt.matrix.tdouble.impl.DenseDoubleMatrix1D;
@@ -26,7 +27,6 @@ public class sDLGraph {
 	public ArrayList<Integer> D;     
 	/**The future no-link set*/
 	public ArrayList<Integer> L;
-	
 	
 	
 	// useful
@@ -133,7 +133,8 @@ public class sDLGraph {
 				values[i++] += alpha;
 			}
 		}
-		
+		System.out.println(s);
+		System.out.println(Arrays.toString(values));
 		return new SparseCCDoubleMatrix2D(tfg.getN(),tfg.getN(),rowIndexes,columnIndexes,values, false,false,false);				
 	}
 	

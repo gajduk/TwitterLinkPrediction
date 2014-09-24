@@ -1,7 +1,14 @@
 package features;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
+
+import core.Edge;
 
 public class Features {
 	
@@ -32,6 +39,16 @@ public class Features {
 	
 	public Feature getFeature(int idx1 , int idx2 ) {
 		return features_map.get(idx1).get(idx2);
+	}
+	
+	public DBObject getDBObject() {
+		return new BasicDBObject("extractor",fe.name()).append("features",features_list.stream().map(f -> f.getDBObject()).collect(Collectors.toList()));
+	}
+	
+	public static Features parseFromDBObject(DBObject dbo) {
+		FeatureExtractors fe = FeatureExtractors.valueOf((String)dbo.get("extractor"));
+		List<Feature> features_list = ((List<DBObject>)dbo.get("features")).stream().map(Feature::parseFromDBObject).collect(Collectors.toList());
+		return new Features(fe,features_list);
 	}
 
 }

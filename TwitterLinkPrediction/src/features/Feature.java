@@ -1,5 +1,8 @@
 package features;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
+
 import core.TwitterUserForMap;
 
 
@@ -41,6 +44,17 @@ public class Feature {
 
 	public double getValue() {
 		return value;
+	}
+	
+	public DBObject getDBObject() {
+		return new BasicDBObject("u1",u1.getDBObject()).append("u2",u2.getDBObject()).append("value",value);
+	}
+	
+	public static Feature parseFromDBObject(DBObject dbo) {
+		TwitterUserForMap u1 = TwitterUserForMap.parseFromDB((DBObject) dbo.get("u1"));
+		TwitterUserForMap u2 = TwitterUserForMap.parseFromDB((DBObject) dbo.get("u2"));
+		double value = (double) dbo.get("value");
+		return new Feature(u1,u2,value);
 	}
 	
 }
