@@ -184,7 +184,7 @@ public class LinkPredictionTrainer {
 	 * @throws InterruptedException 
 	 */
 	public double [] getGradient (double [] w) throws InterruptedException {
-		costFunctionAndGradient(new DenseDoubleMatrix1D(w));
+//		costFunctionAndGradient(new DenseDoubleMatrix1D(w));
 		return gradient;
 	}
 	

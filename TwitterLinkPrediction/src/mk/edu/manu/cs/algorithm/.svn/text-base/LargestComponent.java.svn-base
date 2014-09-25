@@ -1,0 +1,135 @@
+package mk.edu.manu.cs.algorithm;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.concurrent.ConcurrentLinkedQueue;
+
+import mk.edu.manu.cs.graph2.Edge;
+import mk.edu.manu.cs.graph2.Graph;
+
+public class LargestComponent {
+	
+	
+	public static Graph lcc(Graph graph){
+		
+		int NumNodes = graph.nodes.size();
+		boolean[] inQueue = new boolean[NumNodes];
+		boolean[] visited = new boolean[NumNodes];
+		ConcurrentLinkedQueue<Integer> queue = new ConcurrentLinkedQueue<Integer>();
+		
+		int components = 0;
+		ArrayList<Integer> componentSize = new ArrayList<Integer>(); // One field for each component, we don't know their number yet
+		ArrayList<Integer> startNode = new ArrayList<Integer>(); // the 'start' node of each component
+		
+		
+		for(int counter = 0; counter < componentSize.size(); counter++){
+			componentSize.set(counter, 0);
+		}
+		
+		for(int i = 0; i < NumNodes; i++){
+			inQueue[i] = false;
+			visited[i] = false;
+		}
+		
+		boolean allvisited = false;
+		while(allvisited == false){
+			int k;
+			for(k = 0; k < NumNodes; k++){
+				if (visited[k] == false)
+					break;
+			}
+			if(k == NumNodes) { allvisited = true; break; }
+			
+			queue.add(graph.nodes.get(k).id);
+			inQueue[graph.nodes.get(k).id] = true; 
+			startNode.add(components, graph.nodes.get(k).id);
+			componentSize.add(0);
+			
+			int nodeid = -1;
+			while (!queue.isEmpty()){
+				nodeid = queue.poll();
+				
+				visited[nodeid] = true;
+				componentSize.set(components, componentSize.get(components)+1);
+			
+				for(Edge e : graph.nodes.get(nodeid).outEdges){ // ova proagja tuka posto vo objektot graf sortirani se jazlite po id. Nema da briseme jazli od toj graf pa zatoa ova moze.
+					if(!inQueue[e.dest.id]){
+						queue.add(e.dest.id);
+						inQueue[e.dest.id] = true;
+					}
+				}
+			}
+			components++;
+		}
+		
+		System.out.println("Number of components = "+components);
+		System.out.println("Component sizes: "+componentSize);
+		
+		if (components == 1)
+			return graph;
+		// else, build the largest connected component
+		
+		int max = componentSize.get(0);
+		int position = 0;
+		int l = 0;
+		for(l = 0; l < componentSize.size(); l++){
+			if (componentSize.get(l) > max){
+				max = componentSize.get(l);
+				position = l;
+			}
+		}
+		
+		//Delete all nodes not belonging to lcc
+		
+		for(int i = 0; i < NumNodes; i++){
+			inQueue[i] = false;
+			visited[i] = false;
+		}
+		
+		for (int m = 0; m < componentSize.size(); m++){
+			if(m != position){
+				queue.add(startNode.get(m));
+				inQueue[startNode.get(m)] = true; 
+				
+				int nodeid = -1;
+				while (!queue.isEmpty()){
+					nodeid = queue.poll();
+				
+					visited[nodeid] = true; // ova ne mora
+					int index = Collections.binarySearch(graph.nodes, nodeid);
+					for(Edge e : graph.nodes.get(index).outEdges){ // ova proagja tuka posto vo objektot graf sortirani se jazlite po id. Nema da briseme jazli od toj graf pa zatoa ova moze.
+						if(!inQueue[e.dest.id]){
+							queue.add(e.dest.id);
+							inQueue[e.dest.id] = true;
+						}
+					}
+					graph.nodes.remove(index);
+				}
+			}
+		}
+		return graph;
+	}
+	
+	public static Graph readGraphOrdinary(String filename, boolean makeSymmetric) throws IOException{
+		
+		BufferedReader r = new BufferedReader(new FileReader(filename));
+		String line = null;
+		Graph g = new Graph(makeSymmetric);
+		int src = -1;
+		int dest = -1;
+		int nextsrc = -1;
+		
+		while ((line = r.readLine()) != null) {
+			line = line.trim();
+			String[] result = line.split("\t");
+			nextsrc = Integer.parseInt(result[0]);
+			dest = Integer.parseInt(result[1]);
+			
+			g.addEdge(nextsrc, dest);	
+		}
+		return g;
+	}
+}

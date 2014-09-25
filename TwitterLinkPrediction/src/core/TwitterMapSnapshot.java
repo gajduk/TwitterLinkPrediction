@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+import mk.edu.manu.cs.algorithm.Graph;
 import utils.DatabaseManager;
 import utils.Utils;
 
@@ -87,6 +88,20 @@ public class TwitterMapSnapshot {
 			edges.addAll(us.getFollowers().stream().map(id -> new Edge(us.user.idx,user_ids.get(id).idx)).collect(Collectors.toList()));
 //		edges.sort((a,b) -> (a.a==b.a)?Integer.compare(a.b, b.b):Integer.compare(a.a, b.a));
 		return new TwitterFeatureGraph(users.size(), fes.size(),edges, list);
+	}
+
+
+	public Graph buildGraph() {
+		HashMap<Long,TwitterUserForMap> user_ids = new HashMap<>(DatabaseManager.INSTANCE.getAllUsers().stream().collect(Collectors.toMap(TwitterUserForMap::getId,Function.identity())));
+		
+		Graph g = new Graph();
+		users.forEach(u -> g.addNode(u.getidx(), u.getUser_id()+"", 0));
+		for ( UserSnapshot u1 : users ) {
+			for ( Long u2id : u1.followers ) {
+				g.addEdge(u1.getidx(), user_ids.get(u2id).idx);
+			}
+		}
+		return g.toNormalizedGraph();
 	}
 	
 }
