@@ -1,7 +1,10 @@
 package core;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.PrintWriter;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -69,6 +72,33 @@ public class TwitterMapSnapshot {
 		List<DBObject> users_snaps = (List<DBObject>) dbo.get("users");
 		List<UserSnapshot> users = new ArrayList<>(users_snaps.stream().map(UserSnapshot::parseFromDB).collect(Collectors.toList()));
 		return new TwitterMapSnapshot(users,new Date(t));
+	}
+	
+	public void exportToNetFile(String filename) {
+		HashMap<Long,TwitterUserForMap> user_ids = new HashMap<>(DatabaseManager.INSTANCE.getAllUsers().stream().collect(Collectors.toMap(TwitterUserForMap::getId,Function.identity())));
+		try ( PrintWriter out = new PrintWriter(new File(filename))) {
+			HashMap<Integer,Integer> count = new HashMap<>();
+			for ( UserSnapshot u : users ) {
+				int idx1 = u.user.idx;
+				for ( Long user2 : u.followers ) {
+					int idx2 = user_ids.get(user2).idx;
+					count.put(idx2, count.getOrDefault(idx2, 0)+1);
+				}
+			}
+			out.println("*Vertices "+users.size());
+			users.forEach(u -> out.println(u.user.idx+" \"Name:"+u.user.screenname+"  Followers:"+count.getOrDefault(u.user.idx,0)+" Followees:"+u.followers.size()+"\""));
+			out.println("*Edges "+users.stream().map(u -> u.followers.size()).reduce((a,b) -> a+b).get());
+			
+			for ( UserSnapshot u : users ) {
+				int idx1 = u.user.idx;
+				for ( Long user2 : u.followers ) {
+					int idx2 = user_ids.get(user2).idx;
+					out.println(idx2+" "+idx1+" 1");
+				}
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public DBObject getDBObject() {

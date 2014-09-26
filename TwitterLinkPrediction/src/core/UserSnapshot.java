@@ -1,6 +1,9 @@
 package core;
 
 import java.util.List;
+
+import utils.DatabaseManager;
+
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 
@@ -44,7 +47,7 @@ public class UserSnapshot {
 	}
 	
 	public static UserSnapshot parseFromDB(DBObject dbo) {
-		return new UserSnapshot(new TwitterUserForMap((long)(dbo.get("id")),(int)(dbo.get("idx"))),(List<Long>)dbo.get("followers"));
+		return new UserSnapshot(DatabaseManager.INSTANCE.getUser((long)(dbo.get("id"))),(List<Long>)dbo.get("followers"));
 	}
 
 }

@@ -25,7 +25,36 @@ import core.TwitterMapSnapshot;
 public class Main {
 	
 	public static void main(String[] args) throws IOException {
+		TwitterMapSnapshot tms = TwitterMapSnapshot.parseFromDBObject(DatabaseManager.INSTANCE.db.getCollection("TwitterMaps").findOne());
 		
+		
+		tms.exportToNetFile("twitter3.net");
+		
+		/*
+		HashMap<Long,Integer> indegree = new HashMap<Long,Integer>();
+		tms.getUsers().forEach(u -> u.getFollowers().forEach((uid) -> {
+			indegree.put(uid,1+indegree.getOrDefault(uid, 0));
+			indegree.put(u.getUser_id(),1+indegree.getOrDefault(u.getUser_id(), 0));
+		}));
+		Graph graph = new SingleGraph("Tutorial 1");
+		tms.getUsers().forEach((user) -> {
+			if (indegree.getOrDefault(user.getUser_id(), 0) > 0 ) 
+				graph.addNode(""+user.getUser_id());
+		});
+		
+		for ( UserSnapshot user : tms.getUsers() ) {
+			for ( Long user2 : user.getFollowers() ) {
+					if ( Math.random() < 10.0/Math.min(indegree.get(user.getUser_id()),indegree.get(user2)) )
+						graph.addEdge(user.getUser_id()+","+user2,user.getUser_id()+"",user2+"",true);
+				
+			}
+		}
+		graph.addAttribute("ui.stylesheet", "node  { fill-color: red; } edge { arrow-shape: none; }");
+		graph.display();
+		*/
+	}
+	
+	public static void angel() throws IOException {
 		TwitterMapSnapshot tms = TwitterMapSnapshot.parseFromDBObject(DatabaseManager.INSTANCE.db.getCollection("TwitterMaps").findOne());
 		
 		mk.edu.manu.cs.algorithm.Graph g = tms.buildGraph();
@@ -86,28 +115,6 @@ public class Main {
 		
 		pic.writeAll(graph, "sample.png");
 		
-		/*
-		HashMap<Long,Integer> indegree = new HashMap<Long,Integer>();
-		tms.getUsers().forEach(u -> u.getFollowers().forEach((uid) -> {
-			indegree.put(uid,1+indegree.getOrDefault(uid, 0));
-			indegree.put(u.getUser_id(),1+indegree.getOrDefault(u.getUser_id(), 0));
-		}));
-		Graph graph = new SingleGraph("Tutorial 1");
-		tms.getUsers().forEach((user) -> {
-			if (indegree.getOrDefault(user.getUser_id(), 0) > 0 ) 
-				graph.addNode(""+user.getUser_id());
-		});
-		
-		for ( UserSnapshot user : tms.getUsers() ) {
-			for ( Long user2 : user.getFollowers() ) {
-					if ( Math.random() < 10.0/Math.min(indegree.get(user.getUser_id()),indegree.get(user2)) )
-						graph.addEdge(user.getUser_id()+","+user2,user.getUser_id()+"",user2+"",true);
-				
-			}
-		}
-		graph.addAttribute("ui.stylesheet", "node  { fill-color: red; } edge { arrow-shape: none; }");
-		graph.display();
-		*/
 	}
 
 }
