@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import mk.edu.manu.cs.algorithm.Graph;
 import utils.DatabaseManager;
 import utils.Utils;
 
@@ -69,6 +68,7 @@ public class TwitterMapSnapshot {
 	
 	public static TwitterMapSnapshot parseFromDBObject(DBObject dbo) {
 		long t = (long)dbo.get("t");
+		@SuppressWarnings("unchecked")
 		List<DBObject> users_snaps = (List<DBObject>) dbo.get("users");
 		List<UserSnapshot> users = new ArrayList<>(users_snaps.stream().map(UserSnapshot::parseFromDB).collect(Collectors.toList()));
 		return new TwitterMapSnapshot(users,new Date(t));
@@ -79,6 +79,7 @@ public class TwitterMapSnapshot {
 		try ( PrintWriter out = new PrintWriter(new File(filename))) {
 			HashMap<Integer,Integer> count = new HashMap<>();
 			for ( UserSnapshot u : users ) {
+				@SuppressWarnings("unused")
 				int idx1 = u.user.idx;
 				for ( Long user2 : u.followers ) {
 					int idx2 = user_ids.get(user2).idx;
@@ -118,20 +119,6 @@ public class TwitterMapSnapshot {
 			edges.addAll(us.getFollowers().stream().map(id -> new Edge(us.user.idx,user_ids.get(id).idx)).collect(Collectors.toList()));
 //		edges.sort((a,b) -> (a.a==b.a)?Integer.compare(a.b, b.b):Integer.compare(a.a, b.a));
 		return new TwitterFeatureGraph(users.size(), fes.size(),edges, list);
-	}
-
-
-	public Graph buildGraph() {
-		HashMap<Long,TwitterUserForMap> user_ids = new HashMap<>(DatabaseManager.INSTANCE.getAllUsers().stream().collect(Collectors.toMap(TwitterUserForMap::getId,Function.identity())));
-		
-		Graph g = new Graph();
-		users.forEach(u -> g.addNode(u.getidx(), u.getUser_id()+"", 0));
-		for ( UserSnapshot u1 : users ) {
-			for ( Long u2id : u1.followers ) {
-				g.addEdge(u1.getidx(), user_ids.get(u2id).idx);
-			}
-		}
-		return g.toNormalizedGraph();
 	}
 	
 }

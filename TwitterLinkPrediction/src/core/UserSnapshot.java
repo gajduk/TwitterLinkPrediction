@@ -46,6 +46,7 @@ public class UserSnapshot {
 		return new BasicDBObject("id",getUserId()).append("idx",getUserIdx()).append("followers",followers);
 	}
 	
+	@SuppressWarnings("unchecked")
 	public static UserSnapshot parseFromDB(DBObject dbo) {
 		return new UserSnapshot(DatabaseManager.INSTANCE.getUser((long)(dbo.get("id"))),(List<Long>)dbo.get("followers"));
 	}

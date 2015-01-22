@@ -205,7 +205,7 @@ public class sDLGraph {
 	 * @return SparseCCDoubleMatrix2D
 	 */
 	public SparseCCDoubleMatrix2D transitionDerivativeTranspose (int featureIndex, double alpha) {
-		/*
+		
 		int n = tfg.getEdges().size();
 		
 		int rowIndexes[] = new int[n];
@@ -239,9 +239,9 @@ public class sDLGraph {
 				
 		SparseCCDoubleMatrix2D tempdQt = new SparseCCDoubleMatrix2D(this.tfg.getN(), this.tfg.getN(),rowIndexes,columnIndexes,values,false,false,true);
 		
-*/
+
 		SparseCCDoubleMatrix2D dQt = new SparseCCDoubleMatrix2D(this.tfg.getN(), this.tfg.getN());
-		
+		/*
 		// derivative row sums
 		double [] dRowSums = new double [this.tfg.getN()];
 		for ( Edge e : tfg.getEdges() ) 
@@ -261,7 +261,7 @@ public class sDLGraph {
 			//dQ.set(r, c, value); 
 			dQt.set(c, r, value);
 		}
-		
+		*/
 		/*
 		for ( r = 0 ; r < tfg.getN() ; ++r ) {
 			for ( c = 0 ; c < tfg.getN() ; ++c ) {
@@ -271,7 +271,7 @@ public class sDLGraph {
 		}
 		*/
 		
-		return dQt;
+		return tempdQt;
 	}
 	
 	/**

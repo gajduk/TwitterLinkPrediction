@@ -24,7 +24,7 @@ import features.TwitterFeatureGraph;
 public class TestParameterLearner {
 
 	public static void main(String[] args) throws ParseException, InterruptedException, FileNotFoundException, IOException, ClassNotFoundException {
-		System.setOut(new PrintStream(new FileOutputStream(new File("out.txt"))));
+		System.setOut(new PrintStream(new FileOutputStream(new File("out1.txt"))));
 		DBCursor cursor = DatabaseManager.INSTANCE.db.getCollection("TwitterGraphs").find();
 		
 		List<TwitterFeatureGraph> twgs = new ArrayList<>();
